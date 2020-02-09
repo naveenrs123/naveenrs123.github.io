@@ -1,92 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
+  <title>Bootstrap 4 Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="nav.css">
-  <link rel="stylesheet" type="text/css" href="layout.css">
-  <link rel="stylesheet" type="text/css" href="intro.css">
-  <link rel="stylesheet" type="text/css" href="resume.css">
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <title>Naveen - CS Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <!-- Nav Bar -->
-  <ul>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Home</a>
-      <div class="dropdown-content">
-        <a href="#">Bio</a>
-        <a href="#">Education and Experience</a>
-        <a href="#">Technologies</a>
-        <a href="#">Personal Projects</a>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> 
+    <a class="navbar-brand justify-content-center" href="#home">Naveen Sivasankar</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>     
+  
+  <div class="spacer"></div>
+
+  <div id="home" class="container bg-light" style="padding: 70px 20px">
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="Naveen.jpg" alt="Naveen Sivasankar">
+      <div class="card-body">
+        <h1 class="card-title">Hi! I'm Naveen.</h1>
+        <p class="card-text">Some example text.</p>
       </div>
-    </li>
-    <li><a href="#photos">Photos</a></li>
-    <li><a href="#experiments">Experiments</a></li>
-  </ul>
-
-  <div id="intro" class="clearfix">
-    <img src="Naveen.jpg">
-    <div id="section">
-      <h1>Hi there!</h1>
-      <p>I'm Naveen, a third year student studying Computer Science at the University of British Columbia.</p>
-      <p>Explore my website and see what I'm interested in! You can find my resume, my photo portfolio (WIP) and some
-        cool experiments (WIP) that I'm testing out.</p>
     </div>
   </div>
 
-  <div id="resume" class="clearfix">
-    <h1>Resum&#233</h1>
-    <div class="content">
-      <h2>Skills</h2>
-      <hr>
-      <table>
-        <tr>
-          <th>Languages and Libraries</th>
-          <td>Python, Java, C++, C, C#, HTML, CSS, Javascript, Typescript, React**, SQL*, Node.js**</td>
-        </tr>
-        <tr>
-          <th>Software</th>
-          <td>IntelliJ IDEA, Spyder, Jupyter Notebook, Webstorm, Visual Studio**</td>
-        </tr>
-        <tr>
-          <th>Soft Skills</th>
-          <td>Time Management, Teamwork, Critical Thinking, Problem Solving, Quick Learner</td>
-        </tr>
-        <tr>
-          <th>Other</th>
-          <td>LaTeX**, Git, Bash</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><pre>* = in progress          **  =  limited proficiency / familiarity</pre></td>
-        </tr>
-      </table>
-    </div>
+
+  <div id="skills" class="container bg-warning" style="padding-top:70px;padding-bottom:70px">
+    <h1>Skills</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
+
+  <div id="education" class="container bg-secondary" style="padding-top:70px;padding-bottom:70px">
+    <h1>Education</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+  
+  <div id="work" class="container bg-danger" style="padding-top:70px;padding-bottom:70px">
+    <h1>Work Experience</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  
+
+  <div id="projects" class="container bg-info" style="padding-top:70px;padding-bottom:70px">
+    <h1>Section 4 Submenu 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  
+  <div class="spacer"></div>
+
+  <div id="hello" class="container-fluid bg-dark" style="padding-top:20px;padding-bottom:10px">
+    <p class="text-center text-light">Made with love by Naveen.</p>
+  </div>
+
+  </body>
 
 </html>
