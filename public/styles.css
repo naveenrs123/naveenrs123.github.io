@@ -1,8 +1,167 @@
-.spacer {
-    padding: 20px 0px;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    font-family: 'Jost', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header + main {
+    padding-top: 92px;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+nav span {
+    width: fit-content;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5px 15px;
+    border: 1px solid black;
+    background-color: rgb(228, 231, 255);
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav li {
+ list-style-type: none;
+ display: inline;   
+ font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+nav a:hover {
+    background-color: rgb(228, 231, 255);
+    padding: 5px 10px;
+}
+
+.centered-text {
+    margin: 0;
     position: relative;
-    background-color: lightgray;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#main {
+ padding: 20px;     
+ text-align: center;
+ vertical-align: center;
+ height: 260px;
+ background-image: url("aranprime.jpg");
+ background-position-y: 30%;
+ background-size: cover;
+ color:whitesmoke;
+}
+
+#main h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+#main h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#main img {
+    width: 200px;
+    border-radius: 2%;
+    border: 2px solid black;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#main p {
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#skills {
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    border: 10px solid white;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#skills pre {
+    font-size: 16px;
+    margin: 10px 0px;
+    font-family: 'Jost', sans-serif;
+}
+
+#skills table {
+    font-size: 20px;
+    width: 100%;
+}
+
+#skills td {
+    padding-bottom: 10px;
+}
+
+.category {
+    font-weight: 600;
+    padding-right: 10px;
+    text-align: left;
+}
+
+#education {
+    padding: 20px;
+    background-color: rgb(228, 231, 255);
+    border: 10px solid white;
+    border-top: none;
+    display: flex;
+    justify-content: left;
+}
+
+#education table {
+    font-size: 20px;
+    width: fit-content;
+    text-align: left;
+}
+
+#education p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+.courses {
+    font-weight: 300 !important;
+}
+
+#basic-info {
+    padding-right: 100px;
 }
