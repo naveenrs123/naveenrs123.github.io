@@ -1,82 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Naveen Sivasankar</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <span>Naveen Sivasankar</span>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work-experience">Work Experience</a></li>
-          <li><a href="#personal-projects">Personal Projects</a></li>
-          <li><a href="#volunteer-experience">Volunteer Experience</a></li>
-        </ul>
-      </nav>
-      <hr><hr>
-    </header>
-    
-    <main>
-      <section id="main">
-        <img src="Naveen.jpg"/>
-        <div class="centered-text">
-          <h1>Hey there!</h1>
-          <h3>I'm Naveen, a 3rd year Computer Science student.</h3>
-          <p>Welcome to my personal website. Feel free to look around and learn more about me and my skills.</p>
-        </div>
-      </section>
+<head>
+  <title>Naveen Sivasankar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
 
-      <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <pre>* = in progress       ** = limited working proficiency/familiarity</pre>
-        <table>
-          <tr>
-            <td class="category">Languages</td>
-            <td>Python, C, C++, Java, SQL, HTML, CSS, Git, Racket, Javascript/Typescript, React.js**, Node.js**, REST APIs**, C#, .NET**, Bash</td>
-          </tr>
-          <tr>
-            <td class="category">Environments</td>
-            <td>IntelliJ IDEA, Webstorm, Jupyter Notebooks, Visual Studio Code, Visual Studio**</td>
-          </tr>
-          <tr>
-            <td class="category">Soft Skills</td>
-            <td>Time Management, Teamwork, Critical Thinking, Problem Solving, Quick Learning, Proactiveness, Inquisitiveness</td>
-          </tr>
-        </table>
-      </section>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <span><a href="#main">Naveen Sivasankar</a></span>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <hr><hr>
+  </header>
 
-      <section id="education">
-        <div id="basic-info">
+  <main>
+    <section id="main">
+      <img class="vertical-centre" src="Naveen.jpg" />
+      <div class="vertical-centre main-text">
+        <h1>Hey there!</h1>
+        <h3>I'm Naveen, a 3rd year Computer Science student.</h3>
+        <p>Welcome to my personal website. Feel free to look around and learn more about me and my skills.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="bordered-section grey">
+      <h2 class="section-title">Skills</h2>
+      <pre>* = in progress       ** = limited working proficiency/familiarity</pre>
+      <table>
+        <tr>
+          <td class="label">Languages</td>
+          <td>Python, C, C++, Java, SQL, HTML, CSS, Git, Racket, Javascript/Typescript, React.js**, Node.js**, REST
+            APIs**, C#, .NET**, Bash</td>
+        </tr>
+        <tr>
+          <td class="label">Environments</td>
+          <td>IntelliJ IDEA, Webstorm, Jupyter Notebooks, Visual Studio Code, Visual Studio**</td>
+        </tr>
+        <tr>
+          <td class="label">Soft Skills</td>
+          <td>Time Management, Teamwork, Critical Thinking, Problem Solving, Quick Learning, Proactiveness,
+            Inquisitiveness</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="education" class="bordered-section blue">
+      <div class="container">
+        <div class="basic-info">
           <h2 class="section-title">Education</h2>
           <p>B.Sc Honours in Computer Science</p>
-          <p class="courses">University of British Columbia</p>
+          <p class="info-label">University of British Columbia</p>
           <table>
             <tr>
-              <td class="category">Date:</td>
+              <td class="label">Date:</td>
               <td>2017 - Present</td>
             </tr>
             <tr>
-              <td class="category">Location:</td>
+              <td class="label">Location:</td>
               <td>Vancouver, BC</td>
             </tr>
           </table>
         </div>
-        <div id="relevant-courses">
+        <div>
           <p>Relevant Courses</p>
-          <p class="courses">CPSC 210 - Software Construction</p>
-          <p class="courses">CPSC 213 - Introduction to Computer Systems</p>
-          <p class="courses">CPSC 221 - Basic Algorithms and Data Structures</p>
-          <p class="courses">CPSC 310 - Introduction to Software Engineering</p>
-          <p class="courses">CPSC 313 - Computer Hardware and Operating Systems</p>
-          <p class="courses">CPSC 320 - Intermediate Algorithm Design and Analysis</p>
+          <p class="info-label">CPSC 210 - Software Construction</p>
+          <p class="info-label">CPSC 213 - Introduction to Computer Systems</p>
+          <p class="info-label">CPSC 221 - Basic Algorithms and Data Structures</p>
+          <p class="info-label">CPSC 310 - Introduction to Software Engineering</p>
+          <p class="info-label">CPSC 313 - Computer Hardware and Operating Systems</p>
+          <p class="info-label">CPSC 320 - Intermediate Algorithm Design and Analysis</p>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+
+    <section id="experience" class="bordered-section grey">
+      <div class="container">
+        <div class="basic-info">
+          <h2 class="section-title">Experience</h2>
+          <p>Junior Software Engineer (Co-op)</p>
+          <p class="info-label">Trulioo - Vancouver, BC</p>
+        </div>
+        <div>
+          <ul>
+            <li>Maintained and improved a full-stack software product with a team of software professionals.</li>
+            <li>Implemented HTML/CSS/Javascript bug fixes to improve the appearance of the product website.</li>
+            <li>Helped upgrade frontend framework to React 16.8.</li>
+            <li>Upgraded projects to .NET Framework 4.8 in preparation for future migration to .NET Core.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="bordered-section blue">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-content">
+        <div class="collapsible-container">
+          <button type="button" class="collapsible">WDI Mini-Analysis</button>
+          <div class="collapsible-content">
+            <div class="basic-info">
+              <p><a href="https://github.com/naveenrs123/world-indicators-project.git">Link to Project</a></p>
+              <p class="info-label"><span>Duration: </span>July 2018</p>
+              <p class="info-label"><span>Technologies Used:</span> Python with Numpy, Pandas, Matplotlib and Folium</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li>Used the World Bank’s World Development Indicators Dataset available on Kaggle.com</li>
+                <li>Compared Urban Population (% of Total) to Arable Land (% of Land Area) to investigate whether a
+                  correlation existed between the two variables.</li>
+                <li>Visualized both variables on Choropleth maps using Folium to search for spatial trends.</li>
+                <li>Plotted both variables on a scatter plot and determined that the two variables were not correlated.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible-container">
+          <button type="button" class="collapsible">School Planner Applet (CPSC 210)</button>
+          <div class="collapsible-content">
+            <div class="basic-info">
+              <p><a href="https://github.com/naveenrs123/school-planner-project.git">Link to Project</a>
+              </p>
+              <p class="info-label"><span>Duration: </span>September - December 2018</p>
+              <p class="info-label"><span>Technologies Used:</span> Java with Swing (GUI Design) and JUnit (Testing)</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li>Created a simple School Planner App to store tasks, events and classes for UBC Students.</li>
+                <li>Implemented the ability to add and remove tasks/events/classes.</li>
+                <li>Allowed for changes to be shown immediately through the use of the Observer design pattern.</li>
+                <li>Stored data using .csv files to allow for easy retrieval.</li>
+                <li>Created a functional GUI using Swing to allow the user to intuitively input details.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <div class="collapsible-container">
+          <button type="button" class="collapsible">Course/Room Finder (CPSC 310)</button>
+          <div class="collapsible-content">
+            <div class="basic-info">
+              <p class="info-label"><span>Duration: </span>September - December 2019</p>
+              <p class="info-label"><span>Technologies Used:</span> Typescript, Node.js, REST APIs</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li>Implemented a web app from a partial skeleton and a set of requirements to find courses and rooms
+                  from
+                  a dataset.</li>
+                <li>Created a HTML parser to extract information from the saved HTML file of a webpage.</li>
+                <li>Developed a query engine that, given a JSON file, extracts information from a dataset and presents
+                  it
+                  to the user in tabular form.</li>
+                <li>Extended the query engine to allow for grouping of results according to specific fields and
+                  extracting
+                  useful statistics e.g. maximum, count, sum etc. from the dataset.</li>
+                <li>Extracted information from HTML forms, built a JSON string to represent a query, and sent it to the
+                  backend via a REST endpoint.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible-container">
+          <button type="button" class="collapsible">Zoo Management System (CPSC 304)</button>
+          <div class="collapsible-content">
+            <div class="basic-info">
+              <p class="info-label"><span>Duration: </span>January - April 2020</p>
+              <p class="info-label"><span>Technologies Used:</span> Java with Swing (GUI Design), JDBC (Database
+                Connection),
+                Oracle SQL Server</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li>Created a basic Zoo Management System that links to a database for data storage. </li>
+                <li>Enabled insertion, updates, deletion, and searches for employees, animals, and other aspects of the zoo.</li>
+                <li>Used various buttons and visual elements to give finer search controls to users.</li>
+                <li>Implemented moderately complex SQL queries involving aggregation, division and joins.</li>
+                <li>Used Swing to create a functional GUI to allow users to effectively interact with the database.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+</body>
+
 </html>
