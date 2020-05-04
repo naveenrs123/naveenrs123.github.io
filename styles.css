@@ -10,7 +10,7 @@
 
 html {
     font-size: 100%;
-    width: 100%;
+    width: auto;
 }
 
 :target::before {
@@ -27,7 +27,7 @@ hr {
 }
 
 section {
-    width: 100%;
+    width: auto;
     padding: 30px;
 }
 
@@ -64,6 +64,7 @@ section ul {
 }
 
 .container {
+    width: auto;
     display: flex;
     justify-content: left;
     align-items: left;
@@ -103,7 +104,7 @@ header + main {
 
 nav {
     background-color: white;
-    width: 100%;
+    width: auto;
     padding: 20px 10px;
 }
 
@@ -256,7 +257,7 @@ h3 {
 /* FOOTER CSS BEGINS HERE */
 
 footer {
-    width: 100%;
+    width: auto;
     padding: 10px 30px 30px 30px;
     font-size: 16px;
     text-align: center;
