@@ -10,7 +10,8 @@
 
 html {
     font-size: 100%;
-    width: auto;
+    width: 100vw;
+    max-width: 100%;
 }
 
 :target::before {
@@ -192,10 +193,17 @@ h3 {
 
 /* SKILLS SECTION CSS BEGINS HERE */
 
+#skills > div {
+    display: flex;
+    flex-direction: column;
+}
+
 #skills pre {
     font-size: 16px;
     margin: 10px 0px;
     font-family: 'Jost', sans-serif;
+    padding: 0px 10px;
+    width: 95vw;
 }
 
 #skills table {
@@ -365,14 +373,14 @@ select {
     }
 
     #main {
-        padding-top: 40px;
-        height: 580px;
+        padding-top: 60px;
+        height: 620px;
     }
 
     .main-text {
         position: relative;
         width: 100%;
-        top: 28%;
+        top: 30%;
         text-align: center;
     }
 
