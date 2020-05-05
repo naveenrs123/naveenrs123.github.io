@@ -193,27 +193,21 @@ h3 {
 
 /* SKILLS SECTION CSS BEGINS HERE */
 
-#skills > div {
+.skills-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    font-size: 20px;
 }
 
-#skills pre {
+.skills-container .label {
+    min-width: 150px;
+}
+
+.asterisk {
     font-size: 16px;
     margin: 10px 0px;
     font-family: 'Jost', sans-serif;
-    padding: 0px 10px;
-    width: 95vw;
-}
-
-#skills table {
-    font-size: 20px;
-    width: 100%;
-}
-
-#skills td {
-    padding-bottom: 5px;
-    font-weight: 300;
+    word-wrap: normal;
 }
 
 /* SKILLS SECTION CSS ENDS HERE */
@@ -266,7 +260,7 @@ h3 {
 
 footer {
     width: 100%;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 30px 15px 30px;
     font-size: 16px;
     text-align: center;
 }
@@ -310,6 +304,11 @@ footer img {
 
 .footer-link:hover {
     background-color: rgb(172, 181, 255);
+}
+
+.bottom-row {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 select {
@@ -389,6 +388,10 @@ select {
         justify-content: center;
     }
 
+    .skills-container {
+        margin-bottom: 20px;
+    }
+
     .basic-info {
         padding-right: 0;
         margin-bottom: 20px;
@@ -397,4 +400,42 @@ select {
     #experience ul {
         margin-left: 22px;
     }
+
+    .bottom-row {
+        display: block;
+    }
+
+    .bottom-row.footer-link {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #main {
+        height: 620px;
+    }
+
+    #main p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+     
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    span, p, td, li, select {
+        font-size: 1rem !important;
+    }
+
 }

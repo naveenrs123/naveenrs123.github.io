@@ -4,7 +4,7 @@
 <head>
   <title>Naveen Sivasankar</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="icon" type="image/png" href="favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -38,26 +38,25 @@
 
     <section id="skills" class="bordered-section grey">
       <h2 class="section-title">Skills</h2>
-      <div>
-      <table>
-        <tr>
-          <td class="label">Languages</td>
-          <td>Python, C, C++, Java, SQL, HTML, CSS, Git, Racket, Javascript/Typescript, React.js**, Node.js**, REST
-            APIs**, C#, .NET**, Bash</td>
-        </tr>
-        <tr>
-          <td class="label">Environments</td>
-          <td>IntelliJ IDEA, Webstorm, Jupyter Notebooks, Visual Studio Code, Visual Studio**</td>
-        </tr>
-        <tr>
-          <td class="label">Soft Skills</td>
-          <td>Time Management, Teamwork, Critical Thinking, Problem Solving, Quick Learning, Proactiveness,
-            Inquisitiveness</td>
-        </tr>
-      </table>
-      <span>* = in progress</span>
-      <span>** = limited working proficiency/familiarity</span>
+      <div class="container skills-container">
+        <span class="label">Languages</span>
+        <span>Python, C, C++, Java, SQL, HTML, CSS, Git, Racket, Javascript/Typescript, React.js**, Node.js**, REST
+            APIs**, C#, .NET**, Bash</span>
       </div>
+        
+      <div class="container skills-container">
+        <span class="label">Environments</span>
+        <span>IntelliJ IDEA, Webstorm, Jupyter Notebooks, Visual Studio Code, Visual Studio**</span>
+      </div> 
+
+      <div class="container skills-container">
+        <span class="label">Soft Skills</span>
+        <span>Time Management, Teamwork, Critical Thinking, Problem Solving, Quick Learning, Proactiveness,
+          Inquisitiveness</span>
+      </div>
+
+      <p class="asterisk">* = in progress</p>
+      <p class="asterisk">** = limited working proficiency or familiarity</p>
       
     </section>
 
@@ -122,6 +121,7 @@
 
         <div class="collapsible-content wdi">
           <div class="basic-info">
+            <p><strong>WDI Mini Analysis</strong></p>
             <p><a href="https://github.com/naveenrs123/world-indicators-project.git">Link to Project</a></p>
             <p class="info-label"><span>Duration: </span>July 2018</p>
             <p class="info-label"><span>Technologies Used:</span> Python with Numpy, Pandas, Matplotlib and Folium</p>
@@ -140,6 +140,7 @@
 
       <div class="collapsible-content school">
         <div class="basic-info">
+          <p><strong>School Planner Applet (CPSC 210)</strong></p>
           <p><a href="https://github.com/naveenrs123/school-planner-project.git">Link to Project</a>
           </p>
           <p class="info-label"><span>Duration: </span>September - December 2018</p>
@@ -158,6 +159,7 @@
 
         <div class="collapsible-content course">
           <div class="basic-info">
+            <p><strong>Course/Room Finder (CPSC 310)</strong></p>
             <p class="info-label"><span>Duration: </span>September - December 2019</p>
             <p class="info-label"><span>Technologies Used:</span> Typescript, Node.js, REST APIs</p>
           </div>
@@ -181,6 +183,7 @@
 
         <div class="collapsible-content database">
           <div class="basic-info">
+            <p><strong>Zoo Management System (CPSC 304)</strong></p>
             <p class="info-label"><span>Duration: </span>January - April 2020</p>
             <p class="info-label"><span>Technologies Used:</span> Java with Swing (GUI Design), JDBC (Database
               Connection),
@@ -223,9 +226,8 @@
       </div>
     </div>
 
-    <span class="info-label top-padding">Made with &hearts;, by <strong>Naveen</strong>. </span>
-    <span class="spacer"></span>
-    <a class="footer-link" href="https://icons8.com"><span class="info-label">Icons by
+    <span class="info-label top-padding bottom-row">Made with &hearts;, by <strong>Naveen</strong>. </span>
+    <a class="footer-link bottom-row" href="https://icons8.com"><span class="info-label">Icons by
         <strong>Icons8</strong></span></a>
   </footer>
 </body>
