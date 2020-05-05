@@ -339,7 +339,7 @@ select {
 @media screen and (max-width: 900px) {
 
     #main {
-        margin: 15px 40px 0px 0px;
+        margin: 15px 40px 10px 0px;
     }
     
     #main p {
