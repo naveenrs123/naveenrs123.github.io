@@ -32,12 +32,12 @@ $(document).ready(function(){
           }, 800);
         } else if ($(window).width() > 400) {
           $('html, body').animate({
-            scrollTop: $(hash).offset().top - 110
-          }, 1000);
+            scrollTop: $(hash).offset().top - 125
+          }, 800);
         } else {
           $('html, body').animate({
             scrollTop: $(hash).offset().top - 170
-          }, 1000);
+          }, 800);
         }
 
         location.hash = hash;
