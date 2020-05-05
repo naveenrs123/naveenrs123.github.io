@@ -146,10 +146,12 @@ nav a:hover {
 
 #main {    
     height: 320px;
-    background-image: url("aranprime.jpg");
-    background-position-y: 30%;
-    background-size: cover;
-    color:whitesmoke;
+    background-image: url("kelly.jpg");
+    background-position-y: 0%;
+    background-position-x: 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: rgb(235, 235, 235);
     border-bottom: 4px solid black;
     margin-bottom: 10px;
 }
@@ -260,7 +262,7 @@ h3 {
 
 footer {
     width: 100%;
-    padding: 10px 30px 15px 30px;
+    padding: 10px 30px 30px 30px;
     font-size: 16px;
     text-align: center;
 }
