@@ -357,7 +357,7 @@ select {
     }
 
     header + main {
-        padding-top: 120px;
+        padding-top: 110px;
     }
 
     :target::before {
@@ -417,6 +417,10 @@ select {
 }
 
 @media screen and (max-width: 400px) {
+
+    header + main {
+        padding-top: 170px;
+    }
     
     nav li {
         flex-basis: 50%;
