@@ -40,7 +40,6 @@ $(document).ready(function(){
           }, 800);
         }
 
-        location.hash = hash;
       } // End if
     });
   });
