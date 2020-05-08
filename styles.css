@@ -199,10 +199,18 @@ h3 {
 
 /* SKILLS SECTION CSS BEGINS HERE */
 
+#skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .skills-container {
     display: flex;
     flex-direction: row;
     font-size: 20px;
+    flex-basis: 50%;
+    padding: 5px 10px 5px 0px;
 }
 
 .skills-container .label {
@@ -338,6 +346,12 @@ select {
 
 @media screen and (max-width: 900px) {
 
+    #skills-container {
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 0px;
+    }
+
     #main {
         margin: 15px 40px 10px 0px;
     }
@@ -410,7 +424,7 @@ select {
     }
 
     .skills-container {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .basic-info {

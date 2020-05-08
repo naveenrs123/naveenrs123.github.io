@@ -38,23 +38,39 @@
 
     <section id="skills" class="bordered-section grey">
       <h2 class="section-title">Skills</h2>
-      <div class="container skills-container">
-        <span class="label">Languages</span>
-        <span class="info-label">Java, SQL, Python, HTML, CSS, Git, C, C#, C++, Javascript/Typescript, Racket, Bash, React.js**, Node.js**, REST APIs**, .NET**</span>
+      <div id="skills-container">
+        <div class="container skills-container">
+          <span class="label">Backend</span>
+          <span class="info-label">Java, C, C++, C#</span>
+        </div>
+  
+        <div class="container skills-container">
+          <span class="label">Frontend</span>
+          <span class="info-label">HTML, CSS, JavaScript/TypeScript</span>
+        </div>
+          
+        <div class="container skills-container">
+          <span class="label">Frameworks</span>
+          <span class="info-label">React.js**, Node.js**, Mocha**, Chai.js**, .NET**, REST APIs**</span>
+        </div>
+  
+        <div class="container skills-container">
+          <span class="label">Dev Tools</span>
+          <span class="info-label">Git, JIRA, BitBucket</span>
+        </div>
+  
+        <div class="container skills-container">
+          <span class="label">Other</span>
+          <span class="info-label">Python, Bash, SQL</span>
+        </div>
+  
+        <div class="container skills-container">
+          <span class="label">Environments</span>
+          <span class="info-label">IntelliJ IDEA, Webstorm, Jupyter Notebooks, Visual Studio Code, Visual Studio**</span>
+        </div> 
       </div>
-        
-      <div class="container skills-container">
-        <span class="label">Environments</span>
-        <span class="info-label">IntelliJ IDEA, Webstorm, Jupyter Notebooks, Visual Studio Code, Visual Studio**</span>
-      </div> 
+      
 
-      <div class="container skills-container">
-        <span class="label">Soft Skills</span>
-        <span class="info-label">Time Management, Teamwork, Critical Thinking, Problem Solving, Quick Learning, Proactiveness,
-          Inquisitiveness</span>
-      </div>
-
-      <p class="asterisk">* = in progress</p>
       <p class="asterisk">** = limited working proficiency or familiarity</p>
     </section>
 
@@ -99,8 +115,8 @@
         </div>
         <div>
           <ul>
-            <li>Maintained and improved a full-stack software product with a team of software professionals.</li>
-            <li>Implemented HTML, CSS, and JavaScript bug fixes to improve the appearance of the product website.</li>
+            <li>Maintained and improved a full-stack product with a team of software developers.</li>
+            <li>Fixed HTML, CSS, and JavaScript bugs to improve performance and visual appeal.</li>
             <li>Assisted in upgrading front-end framework to React 16.8.</li>
             <li>Upgraded projects to .NET Framework 4.8 in preparation for future migration to .NET Core.</li>
           </ul>
@@ -116,12 +132,14 @@
         <option value="school">School Planner Applet</option>
         <option value="course">Course/Room Finder</option>
         <option value="database">Zoo Management System</option>
+        <option value="website">Personal Website</option>
       </select>
 
         <div class="collapsible-content wdi">
           <div class="basic-info">
             <p><strong>WDI Mini Analysis</strong></p>
-            <p><a href="https://github.com/naveenrs123/world-indicators-project.git">Link to Project</a></p>
+            <p><a href="https://github.com/naveenrs123/world-indicators-project">Link to Project</a></p>
+            <p class="info-label"><span>Category: </span>Personal Project</p>
             <p class="info-label"><span>Duration: </span>July 2018</p>
             <p class="info-label"><span>Technologies Used:</span> Python with Numpy, Pandas, Matplotlib and Folium</p>
           </div>
@@ -129,9 +147,8 @@
             <ul>
               <li>Analyzed the World Bank’s World Development Indicators Dataset available on Kaggle.com</li>
               <li>Compared Urban Population (% of Total) to Arable Land (% of Land Area) to search for a correlation.</li>
-              <li>Visualized both variables on Choropleth maps using Folium to search for spatial trends.</li>
-              <li>Plotted both variables on a scatter plot and determined that the two variables were not correlated.
-              </li>
+              <li>Using Folium, visualized both variables on Choropleth maps to investigate spatial trends.</li>
+              <li>Plotted both variables on a scatter plot and performed correlation testing.</li>
             </ul>
           </div>
         </div>
@@ -139,16 +156,17 @@
       <div class="collapsible-content school">
         <div class="basic-info">
           <p><strong>School Planner Applet (CPSC 210)</strong></p>
-          <p><a href="https://github.com/naveenrs123/school-planner-project.git">Link to Project</a></p>
+          <p><a href="https://github.com/naveenrs123/school-planner-project">Link to Project</a></p>
+          <p class="info-label"><span>Category: </span> Academic Project</p>
           <p class="info-label"><span>Duration: </span>September - December 2018</p>
           <p class="info-label"><span>Technologies Used:</span> Java, Swing, JUnit </p>
         </div>
         <div class="info">
           <ul>
-            <li>Created a simple Java applet to store tasks, events and classes for UBC Students.</li>
-            <li>Implemented the ability to add and remove tasks/events/classes.</li>
+            <li>Created a Java applet to manage tasks, events and classes for UBC Students.</li>
+            <li>Implemented the ability to add, update and remove tasks/events/classes.</li>
             <li>Allowed for changes to be shown immediately through the use of the Observer design pattern.</li>
-            <li>Stored data using .csv files to allow for easy retrieval.</li>
+            <li>Stored data in .csv files for easy retrieval.</li>
             <li>Created a functional GUI using Swing to allow the user to intuitively input details.</li>
             <li>Tested classes and components with unit tests created using JUnit.</li>
           </ul>
@@ -158,6 +176,7 @@
         <div class="collapsible-content course">
           <div class="basic-info">
             <p><strong>Course/Room Finder (CPSC 310)</strong></p>
+            <p class="info-label"><span>Category: </span> Academic Project</p>
             <p class="info-label"><span>Duration: </span>September - December 2019</p>
             <p class="info-label"><span>Technologies Used:</span> Typescript, Node.js, Mocha, Chai.js, REST APIs</p>
           </div>
@@ -165,11 +184,10 @@
             <ul>
               <li>Implemented a web app from a partial skeleton and a set of requirements to find courses and rooms
                 from a dataset.</li>
-              <li>Created a HTML parser to extract information from a saved webpage.</li>
-              <li>Developed a query engine that takes a JSON file and extracts requested information from the dataset(s).</li>
+              <li>Created a parser for both HTML and JSON raw data files that must be loaded into the application.</li>
+              <li>Created a query engine to parse user search input and extract the appropriate data.</li>
               <li>Extended the query engine to allow for grouping, aggregation, and other complex querying operations.</li>
-              <li>Extracted information from HTML forms, built a JSON string to represent a query, and sent it to the
-                backend via a REST endpoint.</li>
+              <li>Extracted form information and sent it to the backend query engine as a JSON string using a REST endpoint. </li>
               <li>Created thorough unit tests using Mocha and Chai.js.</li>
             </ul>
           </div>
@@ -179,16 +197,35 @@
           <div class="basic-info">
             <p><strong>Zoo Management System (CPSC 304)</strong></p>
             <p><a href="https://github.com/naveenrs123/ZooManagement304">Link to Project</a></p>
+            <p class="info-label"><span>Category: </span> Academic Project</p>
             <p class="info-label"><span>Duration:</span> January - April 2020</p>
             <p class="info-label"><span>Technologies Used:</span> Java, JDBC, Oracle SQL Server, Swing</p>
           </div>
           <div class="info">
             <ul>
               <li>Created a Java Applet for a Zoo Management System with a relational database backend. </li>
-              <li>Enabled users to insert, update, delete, and search for employees, animals, and other aspects of the zoo.</li>
+              <li>Enabled insertions, deletions, updates, and searches using the database. </li>
+              <li>Developed a functional GUI using Swing to allow users to effectively interact with the database.</li>
               <li>Used various buttons and visual elements to give finer search controls to users.</li>
               <li>Implemented moderately complex SQL queries involving aggregation, division and joins.</li>
-              <li>Used Swing to create a functional GUI to allow users to effectively interact with the database.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collapsible-content website">
+          <div class="basic-info">
+            <p><strong>Personal Website</strong></p>
+            <p><a href="https://github.com/naveenrs123/naveenrs123.github.io">Link to Project</a></p>
+            <p class="info-label"><span>Category: </span>Personal Project</p>
+            <p class="info-label"><span>Duration: </span>July 2018</p>
+            <p class="info-label"><span>Technologies Used:</span> HTML, CSS, JavaScript/jQuery</p>
+          </div>
+          <div class="info">
+            <ul>
+              <li>Created a lightweight, responsive website.</li>
+              <li>Used CSS media queries to responsively adjust sizes and layouts based on viewport size.</li>
+              <li>Flexibly positioned elements using CSS Flexbox.</li>
+              <li>Implemented smooth scrolling and dropdown animation using jQuery snippets. </li>
             </ul>
           </div>
         </div>
