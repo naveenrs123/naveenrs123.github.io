@@ -26,17 +26,21 @@ $(document).ready(function(){
         var hash = this.hash;
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        if ($(window).width() > 900) {
+        if ($(window).width() > 1400) {
           $('html, body').animate({
-            scrollTop: $(hash).offset().top - 90
+            scrollTop: $(hash).offset().top - 100
+          }, 800);
+        } else if ($(window).width() > 1100) {
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 95
           }, 800);
         } else if ($(window).width() > 400) {
           $('html, body').animate({
-            scrollTop: $(hash).offset().top - 153
+            scrollTop: $(hash).offset().top - 143
           }, 800);
         } else {
           $('html, body').animate({
-            scrollTop: $(hash).offset().top - 203
+            scrollTop: $(hash).offset().top - 190
           }, 800);
         }
 
