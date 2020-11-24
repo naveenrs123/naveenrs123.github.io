@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+/* COMMON BEGINS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+}
+
+:target::before {
+    padding-top: 82px;
+    margin-top: -82px;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    height: 100%;
+}
+
+hr {
+    border: 2px solid white;
+}
+
+section {
+    width: 100%;
+    padding: 30px;
+    color: white;
+}
+
+section p {
+    font-size: 20px;
+    margin: 5px auto;
+    font-weight: 500;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.bordered-section {
+    border: 10px solid rgb(237, 255, 70);
+    border-top: none;
+}
+
+.grey {
+    background-color: rgb(44, 44, 44);
+}
+
+.blue {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.yellow {
+    color: rgb(237, 255, 70);
+}
+
+.section-title {
+    font-size: 2em;
+    font-weight: 700;
+    width: fit-content;
+    color: rgb(237, 255, 70);  
+    margin-bottom: 10px; 
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.label {
+    font-weight: 500 !important;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.info-label {
+    font-weight: 400;
+}
+
+.basic-info {
+    padding-right: 50px;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+/* COMMON BEGINS */

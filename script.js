@@ -28,15 +28,15 @@ $(document).ready(function(){
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         if ($(window).width() > 900) {
           $('html, body').animate({
-            scrollTop: $(hash).offset().top - 80
+            scrollTop: $(hash).offset().top - 90
           }, 800);
         } else if ($(window).width() > 400) {
           $('html, body').animate({
-            scrollTop: $(hash).offset().top - 125
+            scrollTop: $(hash).offset().top - 153
           }, 800);
         } else {
           $('html, body').animate({
-            scrollTop: $(hash).offset().top - 170
+            scrollTop: $(hash).offset().top - 203
           }, 800);
         }
 
