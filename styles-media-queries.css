@@ -52,6 +52,11 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    #about {
+        padding: 20px 10px 0px;
+    }
+
     #overlay {
         opacity: 0;
     }
@@ -117,20 +122,20 @@
     }
 
     #about img {
-        width: 220px;
+        width: 250px;
     }
 
     .about-content h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .about-content h3 {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
         padding: 0 10px;
     }
 
     .about-title a {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
     }
 
     .about-text-large p {
