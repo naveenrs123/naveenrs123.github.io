@@ -104,7 +104,7 @@
 
 @media screen and (max-width: 600px) {
     .section-container {
-        padding: 1rem;
+        padding: 1rem 0.5rem 1rem 2rem;
     }
 
     .section-title {
