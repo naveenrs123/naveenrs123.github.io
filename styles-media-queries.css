@@ -64,8 +64,8 @@
         width: 0px;
     }
 
-    img {
-        width: 280px;
+    #about img {
+        width: 320px;
     }
 
     #sidebar-links {
@@ -107,37 +107,112 @@
         padding: 1rem;
     }
 
-    img {
-        width: 200px;
+    .section-title {
+        font-size: 1.5rem;
+        padding: 5px 0px;
     }
 
+    #about img {
+        width: 220px;
+    }
 
-    .skills-container:first-child {
-        padding-top: 15px;
+    .about-content h1 {
+        font-size: 3rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+
+    .about-title a {
+        font-size: 1.4rem;
+    }
+
+    .about-text-large p {
+        font-size: 1.1rem;
     }
 
     .skills-container {
         width: 100%;
-        padding: 5px 15px;
+        padding: 5px 5px;
+        font-size: 1.1rem;
+    }
+
+    .label {
+        font-size: 1.25rem;
     }
 
     .skills-container:last-child {
         padding-bottom: 15px;
     }
 
+    .education-container {
+        padding: 5px 5px;
+        font-size: 1.1rem;
+    }
+
+    .education-title {
+        font-size: 1.25rem;
+    }
+
     #education-degree .info-label {
-        width: 100%; 
+        width: 100%;
+        padding: 0; 
     }
 
     .course-list p {
         width: 100%;
     }
 
-    #projects .card-body {
-        flex-direction: column;
+    .container-item {
+        font-size: 1.1rem;
     }
 
-    .card-section {
+    .container-item strong {
+        font-size: 1.25rem;
+    }
+    
+    .container-item .info-label {
+        font-weight: 300;
+        font-size: 1.15rem;
         margin-bottom: 8px;
+    }
+
+    .container-item .basic-info {
+        padding: 5px 10px;
+    }
+
+    .container-item .points {
+        padding: 0;
+        margin-right: 15px;
+    }
+
+    #projects .card-header .card-link {
+        font-size: 1.3rem;
+        padding: 5px 10px;
+    }
+
+    #projects .card {
+        font-size: 1.1rem;
+    }
+
+    #projects .card-body {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    #projects .card-section {
+        margin-bottom: 8px;
+        width: fit-content;
+    }
+
+    #projects ul {
+        padding-left: 30px;
+        margin-bottom: 0;
+    }
+
+    #projects li:last-child {
+        margin-bottom: 0;
     }
 } 

@@ -21,7 +21,7 @@ nav {
     height: 100%;
     background-color: #30475e;
     text-align: center;
-    transition: width 0.4s;
+    transition: width 0.3s;
 }
 
 .nav-container {
@@ -38,7 +38,7 @@ nav {
     text-decoration: none;
     text-align: center;
     color: #222222;
-    transition: 0.4s;
+    transition: 0.3s;
     padding: 0.7rem 1rem;
     font-size: 1.4rem;
     font-weight: 400;
@@ -152,7 +152,7 @@ main {
     width: 100%;
     opacity: 0;
     background-color: #ffffff;
-    transition: opacity 0.4s;
+    transition: opacity 0.3s;
     z-index: -1;
 }
 
@@ -275,7 +275,6 @@ main {
 .course-list p {
     width: 50%;
     height: fit-content;
-    padding: 0px 10px;
 }
 
 .course-list span {
@@ -319,6 +318,10 @@ main {
 
 .container-item .points {
     padding: 10px 20px;
+}
+
+.container-item li {
+    margin-bottom: 8px;
 }
 
 /* #endregion EXPERIENCE */
@@ -374,14 +377,14 @@ main {
 
 #projects .card-body .card-link:link {
     padding: 0px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 #projects .card-body .card-link:hover {
     background-color: #ececec;
     color: #222222;
     padding: 0px 15px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 #projects .info-label span {
