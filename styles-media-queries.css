@@ -64,6 +64,10 @@
         width: 0px;
     }
 
+    img {
+        width: 280px;
+    }
+
     #sidebar-links {
         display: none;
     }
@@ -99,6 +103,15 @@
 }
 
 @media screen and (max-width: 600px) {
+    .section-container {
+        padding: 1rem;
+    }
+
+    img {
+        width: 200px;
+    }
+
+
     .skills-container:first-child {
         padding-top: 15px;
     }
