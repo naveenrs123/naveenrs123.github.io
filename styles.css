@@ -1,0 +1,399 @@
+/* #region NAVIGATION */
+
+button {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    font-size: 1.5rem;
+    color: #ececec;
+    background-color: #000000;
+    padding-bottom: 4px;
+}
+
+nav {
+    width: 220px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #30475e;
+    text-align: center;
+    transition: width 0.4s;
+}
+
+.nav-container {
+    background-color:#ececec;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    text-align: center;
+    color: #222222;
+    transition: 0.4s;
+    padding: 0.7rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav-item a:hover, .nav-link.active {
+    background-color: #222222;
+    color:#ececec;
+}
+
+#sidebar-links img {
+    width: 32px;
+}
+
+#sidebar-links .sidebar-contact {
+    margin-bottom: 20px;
+}
+
+#sidebar-links {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ececec;
+    text-align: center;
+}
+
+
+#sidebar-info .yellow {
+    color: #f2a365;
+}
+
+
+#sidebar-info .info-text {
+    display: block;
+    margin: 20px 10px;
+    font-weight: 400;
+}
+
+#sidebar-info a {
+    color: #ececec;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+#sidebar-info a:link {
+    transition: 0.3s;
+}
+
+#sidebar-info a:hover {
+    background-color: #ececec;
+    color: #222222;
+    transition: 0.3s;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #ececec;
+}
+
+/* #endregion NAVIGATION */
+
+/* #region COMMON */
+
+.noTransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222831;
+    position: relative;
+    font-weight: 300;
+}
+
+main {
+    margin-right: 220px;
+    color: #ececec;
+}
+
+.section-title {
+    padding: 5px 1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #f2a365;
+    width: fit-content;
+}
+
+.section-container {
+    padding: 2rem;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #ffffff;
+    transition: opacity 0.4s;
+    z-index: -1;
+}
+
+/* #endregion COMMON */
+
+/* #region ABOUT */
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 10px 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#about img {
+    width: 380px;
+    margin: 25px 50px 0px 40px;
+    border: 10px solid #ececec;
+}
+
+.about-content h1 {
+    font-size: 5rem;
+    padding: 0 0 5px;
+    color: #f2a365;
+}
+
+.about-content h3 {
+    padding: 0 10px;
+}
+
+.about-text-large {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.about-title a {
+    color:#f2a365;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.about-text-large p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.about-text-large span {
+    font-weight: 600;
+}
+
+/* #endregion ABOUT */
+
+/* #region SKILLS */
+
+.skills-content {
+    background-color: #30475e;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 7px 0px;
+}
+
+/* #endregion SKILLS */
+
+/* #region EDUCATION */
+
+.education-container {
+    background-color: #30475e;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+
+.education-container div {
+    margin: 10px 0px;
+}
+
+#education-degree {
+    flex-basis: 340px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 10px 15px;
+}
+
+.education-container span {
+    font-weight: 600;
+}
+
+.education-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#education-courses {
+    padding: 10px 0px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.course-list p {
+    width: 50%;
+    height: fit-content;
+    padding: 0px 10px;
+}
+
+.course-list span {
+    color: #f2a365;
+}
+
+/* #endregion EDUCATION */
+
+/* #region EXPERIENCE */
+
+.experience-container {
+    background-color: #30475e;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container-item {
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0;
+}
+
+.container-item strong {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.container-item .info-label {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.container-item .basic-info {
+    color: white;
+    width: 100%;
+    padding: 15px 35px;
+}
+
+.container-item .points {
+    padding: 10px 20px;
+}
+
+/* #endregion EXPERIENCE */
+
+/* #region PROJECTS */
+
+#accordion > div:first-child {
+    border-top: 1px solid #ececec;
+}
+
+#projects .card-header .card-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ececec;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px 20px;
+}
+
+#projects .card {
+    font-size: 1.2rem;
+    border-radius: 0px;
+    border: none;
+    background-color: #222831;
+}
+
+#projects .card-header {
+    background-color: #222831;
+    border-bottom: 1px solid #ececec;
+    border-radius: 0px;
+    padding: 10px 0px;
+}
+
+#projects .info-label {
+    margin-bottom: 8px;
+}
+
+#projects .card-body {
+    display: flex;
+    align-items: flex-start;
+    background-color: #30475e;
+    color: #ececec;
+}
+
+#projects .card-body .card-link {
+    display: block;
+    width: fit-content;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #f2a365;
+}
+
+#projects .card-body .card-link:link {
+    padding: 0px;
+    transition: 0.4s;
+}
+
+#projects .card-body .card-link:hover {
+    background-color: #ececec;
+    color: #222222;
+    padding: 0px 15px;
+    transition: 0.4s;
+}
+
+#projects .info-label span {
+    font-weight: 600;
+}
+
+#projects .card-section {
+    margin-right: 10px;
+    width: 400px;
+}
+
+#projects li {
+    margin-bottom: 6px;
+}
+
+/* #endregion PROJECTS */
