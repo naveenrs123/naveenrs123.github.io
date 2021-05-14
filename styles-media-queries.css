@@ -100,11 +100,15 @@
     .container-item:last-child {
         margin-bottom: 10px;
     }
+
+    .section-container {
+        padding: 1rem 0rem 1rem 1.35rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .section-container {
-        padding: 1rem 0.5rem 1rem 2rem;
+        padding: 1rem 0rem 1rem 1.35rem;
     }
 
     .section-title {
@@ -121,16 +125,16 @@
     }
 
     .about-content h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         padding: 0 10px;
     }
 
     .about-title a {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .about-text-large p {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 
     .skills-container {
