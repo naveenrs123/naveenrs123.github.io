@@ -118,6 +118,7 @@ nav {
 
 html {
     scroll-behavior: smooth;
+    width: auto;
 }
 
 body {
