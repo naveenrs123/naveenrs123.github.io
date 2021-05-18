@@ -18,7 +18,7 @@ $(document).ready(function () {
         document.querySelector("main").style.marginRight = "0";
     }
 
-    $("a").on('click', function(event) {
+    $(".nav-link").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           event.preventDefault();
