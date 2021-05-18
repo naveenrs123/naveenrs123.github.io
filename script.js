@@ -12,7 +12,7 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip({ boundary: 'window' });
     if (window.innerWidth >= 900) {
         openNav();
-        document.querySelector("main").style.marginRight = "220px";
+        document.querySelector("main").style.marginRight = "180px";
     } else {
         closeNav();
         document.querySelector("main").style.marginRight = "0";
@@ -48,7 +48,12 @@ document.querySelectorAll(".about-title a").forEach(element => {
 });
 
 function openNav(noTransition) {
-    sidebar.style.width = "220px";
+    if (window.innerWidth > 900) {
+        sidebar.style.width = "180px";
+    } else {
+        sidebar.style.width = "140px";
+    }
+
     links.style.display = "flex";
 }
 
@@ -73,7 +78,7 @@ function toggleNav() {
 window.addEventListener("resize", () => {
     if (window.innerWidth >= 900 && !above900) {
         openNav();
-        main.style.marginRight = "220px";
+        main.style.marginRight = "180px";
         overlay.style.opacity = "0";
         overlay.style.zIndex = -1;
         above900 = true;

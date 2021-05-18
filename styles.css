@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    margin-right: 220px;
+    margin-right: 180px;
     color: #ececec;
 }
 
@@ -49,6 +49,19 @@ main {
     z-index: -1;
 }
 
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: #222222;
+    color: #ececec;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
 /* #endregion COMMON */
 
 /* #region NAVIGATION */
@@ -65,7 +78,7 @@ button {
 }
 
 nav {
-    width: 220px;
+    width: 180px;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -148,17 +161,6 @@ nav {
 
 #sidebar > img {
     width: 100%;
-}
-
-#copyright {
-    position: absolute;
-    bottom: 0%;
-    text-align: center;
-    width: 100%;
-    padding: 5px 0px;
-    font-weight: 600;
-    font-size: 1rem;
-    background-color: #ececec;
 }
 
 /* #endregion NAVIGATION */

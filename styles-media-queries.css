@@ -18,12 +18,21 @@
         width: 220px;
     }
 
+    .nav-item a {
+        font-size: 1.25rem;
+        padding: 0.5rem 0.8rem;
+    }
+
     #sidebar-links {
         display: flex;
     }
 
+    #sidebar-info .info-text {
+        margin: 0;
+    }
+
     main {
-        margin-right: 220px;
+        margin-right: 180px;
     }
 
     .education-container {
@@ -67,6 +76,11 @@
 
     nav {
         width: 0px;
+    }
+
+    .nav-item a {
+        font-size: 1.25rem;
+        padding: 0.5rem 0.8rem;
     }
 
     #about img {
@@ -113,17 +127,29 @@
         padding: 0.9rem;
     }
 
+    #sidebar-links {
+        padding-top: 20px;
+    }
+
+    #sidebar-links img {
+        width: 24px;
+    }
+
+    #sidebar-info .info-text {
+        margin: 0;
+    }
+
     .section-title {
         font-size: 1.5rem;
         padding: 5px 0px;
     }
 
     #about img {
-        width: 250px;
+        width: 200px;
     }
 
     .about-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .about-content h3 {
@@ -132,12 +158,11 @@
     }
 
     .about-title a {
-        font-size: 1.45rem;
+        font-size: 1.25rem;
     }
 
     .about-text-large p {
-        font-size: 1.25rem;
-        padding: 0 15px;
+        font-size: 1.1rem;
     }
 
     .skills-container {
