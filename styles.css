@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    margin-right: 180px;
+    margin-left: 180px;
     color: #ececec;
 }
 
@@ -50,6 +50,7 @@ main {
 }
 
 #copyright {
+    position: fixed;
     text-align: center;
     width: 100%;
     padding: 15px 0px;
@@ -69,8 +70,8 @@ main {
 button {
     display: none;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 9px;
+    left: 9px;
     border: none;
     background-color: #000000;
     z-index: 500;
@@ -82,14 +83,16 @@ nav {
     position: fixed;
     z-index: 1000;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
     background-color: #30475e;
     text-align: center;
     transition: width 0.3s;
+    overflow-y: auto;
 }
 
 .nav-container {
+    width: 100%;
     background-color:#ececec;
     margin: 0;
     padding: 0;
@@ -104,8 +107,8 @@ nav {
     text-align: center;
     color: #222222;
     transition: 0.3s;
-    padding: 0.7rem 1rem;
-    font-size: 1.4rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.35rem;
     font-weight: 400;
 }
 
@@ -115,7 +118,7 @@ nav {
 }
 
 #sidebar-links img {
-    width: 32px;
+    width: 24px;
 }
 
 #sidebar-links .sidebar-contact {
@@ -130,7 +133,6 @@ nav {
     color: #ececec;
     text-align: center;
 }
-
 
 #sidebar-info .yellow {
     color: #f2a365;
@@ -177,8 +179,7 @@ nav {
 
 #about img {
     width: 380px;
-    margin: 25px 40px 0px 40px;
-    border: 1px solid #ececec;
+    margin: 18px 40px 0px 40px;
 }
 
 .about-content h1 {

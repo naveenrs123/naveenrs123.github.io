@@ -32,7 +32,7 @@
     }
 
     main {
-        margin-right: 180px;
+        margin-left: 180px;
     }
 
     .education-container {
@@ -88,11 +88,12 @@
     }
 
     #sidebar-links {
-        display: none;
+        display: none; 
+        padding-top: 20px;
     }
 
     main {
-        margin-right: 0px;
+        margin-left: 0px;
     }
 
     .skills-container {
@@ -125,10 +126,6 @@
 @media screen and (max-width: 600px) {
     .section-container {
         padding: 0.9rem;
-    }
-
-    #sidebar-links {
-        padding-top: 20px;
     }
 
     #sidebar-links img {

@@ -12,10 +12,10 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip({ boundary: 'window' });
     if (window.innerWidth >= 900) {
         openNav();
-        document.querySelector("main").style.marginRight = "180px";
+        document.querySelector("main").style.marginLeft = "180px";
     } else {
         closeNav();
-        document.querySelector("main").style.marginRight = "0";
+        document.querySelector("main").style.marginLeft = "0";
     }
 
     $(".nav-link").on('click', function(event) {
@@ -78,14 +78,14 @@ function toggleNav() {
 window.addEventListener("resize", () => {
     if (window.innerWidth >= 900 && !above900) {
         openNav();
-        main.style.marginRight = "180px";
+        main.style.marginLeft = "180px";
         overlay.style.opacity = "0";
         overlay.style.zIndex = -1;
         above900 = true;
         isSidebarOpen = false;
     } else if (window.innerWidth < 900 && above900) {
         closeNav();
-        main.style.marginRight = "0";
+        main.style.marginLeft = "0";
         above900 = false;
     }
 })
