@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    margin-left: 180px;
+    margin-left: 200px;
     color: #ececec;
 }
 
@@ -50,7 +50,6 @@ main {
 }
 
 #copyright {
-    position: fixed;
     text-align: center;
     width: 100%;
     padding: 15px 0px;
@@ -79,7 +78,7 @@ button {
 }
 
 nav {
-    width: 180px;
+    width: 200px;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -170,16 +169,36 @@ nav {
 /* #region ABOUT */
 
 #about {
-    display: flex;
-    align-items: flex-start;
     padding: 40px 10px 0px;
     margin-left: 25px;
     margin-right: 25px;
 }
 
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.about-heading {
+    margin-right: 30px;
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.about-heading-text {
+    width: 100%;
+}
+
 #about img {
-    width: 380px;
-    margin: 18px 40px 0px 40px;
+    width: 300px;
+    margin: 0px 0px 20px 15px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    justify-self: flex-end;
 }
 
 .about-content h1 {
