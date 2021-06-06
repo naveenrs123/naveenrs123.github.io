@@ -504,7 +504,12 @@
     /* #endregion EDUCATION */    
 
     /* #region EXPERIENCE */
+    .experience-container {
+        padding: 10px 0px 15px;
+    }
+
     .container-item {
+        margin: 10px 10px 0 10px;
         font-size: 0.95rem;
     }
     
