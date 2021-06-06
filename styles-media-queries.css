@@ -522,6 +522,10 @@
         font-size: 1.25rem;
     }
 
+    .container-item ul {
+        padding-inline-start: 30px;
+    }
+
     .container-item .points {
         padding: 0;
         margin-right: 15px;
@@ -552,7 +556,7 @@
     }
 
     #projects ul {
-        padding-left: 30px;
+        padding-inline-start: 20px;
         margin-bottom: 0;
     }
 
