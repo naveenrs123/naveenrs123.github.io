@@ -1,32 +1,115 @@
-@media screen and (max-width: 1150px) {
-    #overlay {
-        opacity: 0;
-    }
-    
-    #about {
-        padding: 40px 20px 0px;
+@media screen and (max-width: 1400px) {
+
+    /* #region COMMON */
+    .section-title {
+        font-size: 2.2rem;
     }
 
-    .about-content {
-        margin-top: 20px;
-        text-align: left;
-        order: 1;
+    #copyright {
+        font-size: 0.9rem;
+    }
+    /* #endregion COMMON */
+
+    /* #region NAVIGATION */
+
+    /* #endregion NAVIGATION */    
+
+    /* #region ABOUT */
+    .about-content h1 {
+        font-size: 5.5rem;
     }
 
-    #about img {
-        width: 280px;
-        align-self: flex-start;
-        order: 2;
+    .about-content h3 {
+        font-size: 2rem;
     }
 
     .about-title a {
-        font-size: 1.7rem;
+        font-size: 2rem;
+    }
+
+    .about-text-large {
+        margin-bottom: 1.2rem;
     }
 
     .about-text-large p {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+    }
+    /* #endregion ABOUT */       
+    
+    /* #region SKILLS */
+    .skills-container {
+        font-size: 1.2rem;
+    }
+    
+    .label {
+        font-size: 1.6rem;
+    }
+    /* #endregion SKILLS */        
+
+    /* #region EDUCATION */
+    .education-container {
+        font-size: 1.2rem;
     }
 
+    .education-title {
+        font-size: 1.6rem;
+    }
+    /* #endregion EDUCATION */    
+
+    /* #region EXPERIENCE */
+    .container-item {
+        font-size: 1.1rem;
+    }
+
+    .container-item p {
+        font-size: 1.6rem;
+    }
+
+    .container-item .info-label {
+        font-size: 1.2rem;
+    }
+
+    .container-item .points {
+        padding: 0px 0px 10px 0px;
+    }
+    /* #endregion EXPERIENCE */  
+
+    /* #region PROJECTS */
+    #projects .card-header .card-link {
+        font-size: 1.6rem;
+    }
+
+    #projects .card {
+        font-size: 1.2rem;
+    }
+
+    #projects li {
+        font-size: 1.1rem;
+    }
+    /* #endregion PROJECTS */  
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* #region COMMON */
+    #overlay {
+        opacity: 0;
+    }
+
+    main {
+        margin-left: 200px;
+    }
+
+    .section-title {
+        margin-bottom: 10px;
+    }
+
+    #copyright {
+        font-size: 0.85rem;
+    }
+    /* #endregion COMMON */
+
+    /* #region NAVIGATION */
     nav {
         width: 220px;
     }
@@ -37,19 +120,71 @@
     }
 
     #sidebar-links {
-        display: flex;
+        padding-top: 30px;
     }
 
     #sidebar-info .info-text {
         margin: 0;
     }
+    /* #endregion NAVIGATION */    
 
-    main {
-        margin-left: 200px;
+    /* #region ABOUT */
+    #about {
+        padding: 40px 20px 0px;
     }
 
+    .about-heading {
+        flex-basis: 320px;
+    }
+
+    .about-content h1 {
+        font-size: 5rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .about-title a {
+        font-size: 1.7rem;
+    }
+
+    .about-text-large {
+        margin-bottom: 1.2rem;
+    }
+
+    .about-text-large p {
+        font-size: 1.4rem;
+    }
+
+    #about img {
+        width: 280px;
+    }
+
+    #about-accordion {
+        margin-right: 10px;
+    }
+    
+    /* #endregion ABOUT */       
+    
+    /* #region SKILLS */
+    .skills-container {
+        font-size: 1.1rem;
+    }
+    
+    .label {
+        font-size: 1.4rem;
+    }
+    /* #endregion SKILLS */        
+
+    /* #region EDUCATION */
     .education-container {
         flex-direction: column;
+        font-size: 1.1rem;
+    }
+
+    .education-title {
+        font-size: 1.4rem;
     }
 
     #education-degree {
@@ -65,22 +200,60 @@
 
     #education-degree .info-label {
         width: 50%; 
-        padding: 0px 10px;
+        padding: 0px 15px 0px 0px;
     }
 
     #education-courses {
         padding: 0px 15px;
     }
+    /* #endregion EDUCATION */    
+
+    /* #region EXPERIENCE */
+    .experience-container {
+        flex-direction: column;
+        padding: 15px 0px 20px;
+    }
+
+    .container-item ul {
+        margin-bottom: 0;
+    }
+
+    .container-item {
+        font-size: 1.0rem;
+        margin-top: 0;
+    }
+
+    .container-item p {
+        font-size: 1.4rem;
+    }
+
+    .container-item .info-label {
+        font-size: 1.1rem;
+    }
+
+    .container-item .points {
+        padding: 0px 0px 10px 0px;
+    }
+    /* #endregion EXPERIENCE */  
+
+    /* #region PROJECTS */
+    #projects .card-header .card-link {
+        font-size: 1.4rem;
+    }
+
+    #projects .card {
+        font-size: 1.1rem;
+    }
+
+    #projects li {
+        font-size: 1.0rem;
+    }
+    /* #endregion PROJECTS */  
 }
 
 @media screen and (max-width: 900px) {
 
-    #about {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 30px 0px;
-    }
-
+    /* #region COMMON */
     #overlay {
         opacity: 0;
     }
@@ -88,14 +261,36 @@
     button {
         display: inline;
     }
+    
+    #sidebar-links {
+        display: none; 
+        padding-top: 20px;
+    }
 
+    main {
+        margin-left: 0px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    #copyright {
+        font-size: 0.8rem;
+    }
+    /* #endregion COMMON */
+
+    /* #region NAVIGATION */
     nav {
         width: 0px;
     }
+    /* #endregion NAVIGATION */    
 
-    .nav-item a {
-        font-size: 1.25rem;
-        padding: 0.5rem 0.8rem;
+    /* #region ABOUT */
+    #about {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px 0px;
     }
 
     #about img {
@@ -115,34 +310,48 @@
     }
 
     .about-content h1 {
-        font-size: 3.5rem;
+        font-size: 4.8rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.6rem;
     }
 
     .about-title a {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .about-text-large {
+        margin-bottom: 1.1rem;
     }
 
     .about-text-large p {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
-
-    #sidebar-links {
-        display: none; 
-        padding-top: 20px;
-    }
-
-    main {
-        margin-left: 0px;
-    }
-
+    /* #endregion ABOUT */       
+    
+    /* #region SKILLS */
     .skills-container {
         width: 50%;
+        font-size: 1.0rem;
+    }
+    
+    .label {
+        font-size: 1.3rem;
+    }
+    /* #endregion SKILLS */        
+
+    /* #region EDUCATION */
+    .education-container {
+        font-size: 1.0rem;
     }
 
-    .experience-container {
-        flex-direction: column;
+    .education-title {
+        font-size: 1.3rem;
     }
+    /* #endregion EDUCATION */    
 
+    /* #region EXPERIENCE */
     .container-item:first-child {
         margin-top: 10px;
     }
@@ -150,29 +359,45 @@
     .container-item {
         margin-bottom: 0;
         margin-top: 0;
-        width: fit-content;
+        font-size: 1.0rem;
     }
 
     .container-item .points {
         padding-bottom: 0;
     }
 
+    .container-item p {
+        font-size: 1.3rem;
+    }
+
     .container-item:last-child {
         margin-bottom: 10px;
     }
+
+    .container-item .info-label {
+        font-size: 1.1rem;
+    }
+    /* #endregion EXPERIENCE */  
+
+    /* #region PROJECTS */
+    #projects .card-header .card-link {
+        font-size: 1.3rem;
+    }
+
+    #projects .card {
+        font-size: 1.0rem;
+    }
+
+    #projects li {
+        font-size: 0.9rem;
+    }
+    /* #endregion PROJECTS */  
 }
 
 @media screen and (max-width: 600px) {
+    /* #region COMMON */
     .section-container {
         padding: 0.9rem;
-    }
-
-    #sidebar-links img {
-        width: 24px;
-    }
-
-    #sidebar-info .info-text {
-        margin: 0;
     }
 
     .section-title {
@@ -180,6 +405,22 @@
         padding: 5px 0px;
     }
 
+    #copyright {
+        font-size: 0.75rem;
+    }
+    /* #endregion COMMON */
+
+    /* #region NAVIGATION */
+    #sidebar-links img {
+        width: 24px;
+    }
+
+    #sidebar-info .info-text {
+        margin: 0;
+    }
+    /* #endregion NAVIGATION */    
+
+    /* #region ABOUT */
     .about-heading {
         flex-basis: 0;
         flex-grow: 1;
@@ -196,31 +437,41 @@
         margin: 0px 0px 40px 15px;
     }
 
+    #about-accordion {
+        margin-right: 0px;
+    }
+
     .about-content {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .about-content h1 {
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
 
     .about-content h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .about-title a {
         font-size: 1.5rem;
     }
 
+    .about-text-large {
+        margin-bottom: 1.1rem;
+    }
+
     .about-text-large p {
         font-size: 1.2rem;
     }
-
+    /* #endregion ABOUT */       
+    
+    /* #region SKILLS */
     .skills-container {
         width: 100%;
         padding: 5px 5px;
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     .label {
@@ -230,10 +481,12 @@
     .skills-container:last-child {
         padding-bottom: 15px;
     }
+    /* #endregion SKILLS */        
 
+    /* #region EDUCATION */
     .education-container {
         padding: 5px 5px;
-        font-size: 1.1rem;
+        font-size: 0.95em;
     }
 
     .education-title {
@@ -248,18 +501,16 @@
     .course-list p {
         width: 100%;
     }
+    /* #endregion EDUCATION */    
 
+    /* #region EXPERIENCE */
     .container-item {
-        font-size: 1.1rem;
-    }
-
-    .container-item strong {
-        font-size: 1.25rem;
+        font-size: 0.95rem;
     }
     
     .container-item .info-label {
         font-weight: 300;
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         margin-bottom: 8px;
     }
 
@@ -267,28 +518,37 @@
         padding: 5px 10px;
     }
 
+    .container-item p {
+        font-size: 1.25rem;
+    }
+
     .container-item .points {
         padding: 0;
         margin-right: 15px;
     }
+    /* #endregion EXPERIENCE */  
 
+    /* #region PROJECTS */
     #projects .card-header .card-link {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         padding: 5px 10px;
     }
 
     #projects .card {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     #projects .card-body {
         flex-direction: column;
-        width: fit-content;
+        align-items: flex-start;
     }
 
     #projects .card-section {
-        margin-bottom: 8px;
-        width: fit-content;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-right: none;
+        border-bottom: 1px solid #ececec;
+        width: 100%;
     }
 
     #projects ul {
@@ -299,4 +559,9 @@
     #projects li:last-child {
         margin-bottom: 0;
     }
+
+    #projects li {
+        font-size: 0.9rem; 
+    }
+    /* #endregion PROJECTS */      
 } 

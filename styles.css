@@ -9,11 +9,10 @@
     transition: none !important;
   }
 
-html {
-    width: auto;
-}
-
 body {
+    width: auto;
+    max-width: 2300px;
+    margin: 0 auto;
     background-color: #222831;
     position: relative;
     font-weight: 300;
@@ -28,7 +27,8 @@ main {
 .section-title {
     padding: 5px 1rem;
     margin-bottom: 15px;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 700;
     color: #f2a365;
     width: fit-content;
 }
@@ -54,7 +54,7 @@ main {
     width: 100%;
     padding: 15px 0px;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: #222222;
     color: #ececec;
     margin-bottom: 0;
@@ -202,10 +202,24 @@ nav {
 }
 
 .about-content h1 {
-    font-size: 5rem;
-    padding: 0 0 5px;
+    font-size: 6.5rem;
     color: #f2a365;
     font-weight: 700;
+}
+
+.about-content h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#about-accordion {
+    margin-right: 40px;
+}
+
+.about-title a {
+    color:#f2a365;
+    font-size: 2.5rem;
+    text-decoration: none;
 }
 
 .about-text-large {
@@ -213,14 +227,8 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-.about-title a {
-    color:#f2a365;
-    font-size: 2rem;
-    text-decoration: none;
-}
-
 .about-text-large p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin: 10px 10px 0px;
 }
 
@@ -245,12 +253,12 @@ nav {
     flex-direction: column;
     width: calc(100% / 3);
     padding: 15px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .label {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     padding: 7px 0px;
 }
 
@@ -263,7 +271,7 @@ nav {
     padding: 10px 20px;
     display: flex;
     flex-direction: row;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .education-container div {
@@ -283,7 +291,7 @@ nav {
 
 .education-title {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 #education-courses {
@@ -297,9 +305,9 @@ nav {
 }
 
 .course-list p {
-    width: calc(50% - 20px);
+    width: calc(50% - 30px);
     height: fit-content;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .course-list span {
@@ -318,36 +326,40 @@ nav {
 }
 
 .container-item {
-    margin: 10px;
-    font-size: 1.2rem;
+    margin: 15px 20px 0px 20px;
+    font-size: 1.3rem;
     font-weight: 300;
-    padding: 0;
-    width: 50%;
 }
 
-.container-item strong {
+.container-item p {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 6px;
 }
 
 .container-item .info-label {
-    font-weight: 300;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+    color: #f2a365;
+    font-style: italic;
 }
 
 .container-item .basic-info {
-    color: white;
-    width: 100%;
-    padding: 15px 35px;
-}
-
-.container-item .points {
+    color: #ececec;
     padding: 10px 20px;
 }
 
+.container-item .points {
+    padding: 0px 10px 10px 10px;
+}
+
 .container-item li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+}
+
+.experience-container strong {
+    font-weight: 600;
 }
 
 /* #endregion EXPERIENCE */
@@ -359,7 +371,7 @@ nav {
 }
 
 #projects .card-header .card-link {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #ececec;
     width: 100%;
@@ -369,7 +381,7 @@ nav {
 }
 
 #projects .card {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 0px;
     border: none;
     background-color: #222831;
@@ -383,12 +395,12 @@ nav {
 }
 
 #projects .info-label {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 #projects .card-body {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     background-color: #30475e;
     color: #ececec;
 }
@@ -396,7 +408,7 @@ nav {
 #projects .card-body .card-link {
     display: block;
     width: fit-content;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
     color: #f2a365;
 }
@@ -419,11 +431,21 @@ nav {
 
 #projects .card-section {
     margin-right: 10px;
-    width: 400px;
+    padding-right: 20px;
+    width: 420px;
+    border-right: 1px solid #ececec;
+}
+
+#projects ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
 #projects li {
     margin-bottom: 6px;
+    font-size: 1.2rem;
 }
 
 /* #endregion PROJECTS */
