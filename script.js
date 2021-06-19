@@ -6,30 +6,28 @@ var main = document.querySelector("main");
 var sidebar = document.getElementById("sidebar");
 var links = document.getElementById("sidebar-links")
 
-// enables bootstrap tooltips and makes sure that sidebar margins are correct on
-// initial load, regardless of viewport size.
 $(document).ready(function () {
+    // enables bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip({ boundary: 'window' });
+
+    // makes sure that sidebar margins are correct on initial load, regardless of viewport size.
     if (window.innerWidth >= 900) {
-        openNav();
-        document.querySelector("main").style.marginLeft = "200px";
+        showNav();
+        main.style.marginLeft = "200px";
     } else {
-        closeNav();
-        document.querySelector("main").style.marginLeft = "0";
+        hideNav();
+        main.style.marginLeft = "0";
     }
 
+    // enables smooth scrolling to section when clicking navigation links.
     $(".nav-link").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           event.preventDefault();
           var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 500);
-  
-        } // End if
+          $('html, body').animate({ scrollTop: $(hash).offset().top }, 500);
+        }
       });
-
 });
 
 // Updates icon when toggling collapsed state of about section links.
@@ -47,75 +45,68 @@ document.querySelectorAll(".about-title a").forEach(element => {
     });
 });
 
-function openNav(noTransition) {
-    if (window.innerWidth > 900) {
-        sidebar.style.width = "200px";
-    } else {
-        sidebar.style.width = "160px";
-    }
-
+function showNav() {
+    sidebar.style.width = window.innerWidth > 900 ? "200px" : "160px";
     links.style.display = "flex";
 }
 
-function closeNav(noTransition) {
+function hideNav() {
     sidebar.style.width = "0";
     links.style.display = "none";
 }
 
+// function to toggle navigation bar (only used for small screens)
 function toggleNav() {
-    var sidebarWidth = document.getElementById("sidebar").style.width;
+    var sidebarWidth = sidebar.style.width;
     if (sidebarWidth == "0px" || sidebarWidth == "") {
-        openNav();
+        showNav();
         overlay.style.opacity = "0.6";  
         overlay.style.zIndex = 1;
     } else {
-        closeNav();
+        hideNav();
         overlay.style.opacity = "0";
         overlay.style.zIndex = -1;
     }
 }
 
+// event listener to handle correct sidebar behaviour when resizing.
 window.addEventListener("resize", () => {
     if (window.innerWidth >= 900 && !above900) {
-        openNav();
+        showNav();
         main.style.marginLeft = "200px";
         overlay.style.opacity = "0";
         overlay.style.zIndex = -1;
         above900 = true;
         isSidebarOpen = false;
     } else if (window.innerWidth < 900 && above900) {
-        closeNav();
+        hideNav();
         main.style.marginLeft = "0";
         above900 = false;
     }
 })
 
-// Makes sure that the sidebar collapses when clicking outside it. 
+// helper to detect click outside of sidebar.
 function outsideClick(event)	{
-    notelem = document.querySelector("nav")
+    var nav = document.querySelector("nav");
     var clickedOut = true;
-    if (event.target == notelem || notelem.contains(event.target)) {
-        clickedOut = false;
-    }
+    if (event.target == nav || nav.contains(event.target)) clickedOut = false;
     return clickedOut;
 }
 
-
-function clickOut(event) {
-    if (outsideClick(event) && document.getElementById("overlay").style.opacity == "0.6") {
+// listener to handle sidebar closing when clicking outside the element.
+window.addEventListener("click", (event) => {
+    if (outsideClick(event) && overlay.style.opacity == "0.6") {
         if (isSidebarOpen) {
-            closeNav();
+            hideNav();
             overlay.style.opacity = "0";
             overlay.style.zIndex = -1;
             isSidebarOpen = false;
         } else {
             isSidebarOpen = true;
         }
-    } else if (document.getElementById("overlay").style.opacity == "0.6") {
+    } else if (overlay.style.opacity == "0.6") {
         isSidebarOpen = true;
     } else {
         isSidebarOpen = false;
     }
-}
-
-window.addEventListener("click", clickOut);
+});
