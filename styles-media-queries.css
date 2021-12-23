@@ -133,10 +133,6 @@
         padding: 40px 20px 0px;
     }
 
-    .about-heading {
-        flex-basis: 320px;
-    }
-
     .about-content h1 {
         font-size: 5rem;
     }
@@ -185,22 +181,6 @@
 
     .education-title {
         font-size: 1.4rem;
-    }
-
-    #education-degree {
-        flex-basis: 0;
-        padding: 0px 15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #education-degree .education-title {
-        width: 100%;
-    }
-
-    #education-degree .info-label {
-        width: 50%; 
-        padding: 0px 15px 0px 0px;
     }
 
     #education-courses {
@@ -298,10 +278,6 @@
         margin-left: 15px;
         margin-bottom: 15px;
         width: 250px;
-    }
-    
-    .about-heading {
-        flex-basis: 260px;
     }
 
     .about-content {
@@ -410,6 +386,11 @@
     }
     /* #endregion COMMON */
 
+    #education-degree .info-label {
+        width: 100%;
+        padding: 0; 
+    }
+
     /* #region NAVIGATION */
     #sidebar-links img {
         width: 24px;
@@ -422,7 +403,6 @@
 
     /* #region ABOUT */
     .about-heading {
-        flex-basis: 0;
         flex-grow: 1;
         flex-shrink: 1;
         margin: 0;

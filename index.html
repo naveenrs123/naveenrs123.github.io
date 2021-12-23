@@ -1,400 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- User CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-media-queries.css" />
+    <link rel="icon" href="picrew-img.png" />
+    <title>Naveen Sivasankar</title>
+  </head>
 
-  <!-- User CSS -->
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="styles-media-queries.css" />
-  <link rel="icon" href="picrew-img.png" />
-  <title>Naveen Sivasankar</title>
-</head>
+  <body data-spy="scroll" data-target="#sidebar" data-offset="100">
+    <div id="overlay" class=""></div>
 
-<body data-spy="scroll" data-target="#sidebar" data-offset="100">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <img src="picrew-img.png" />
 
-  <div id="overlay" class=""></div>
-
-  <!-- Sidebar -->
-  <nav id="sidebar">
-
-    <img src="picrew-img.png" />
-
-    <!-- Navigation -->
-    <ul class="nav-container">
-      <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-      <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
-      <li class="nav-item"><a class="nav-link" href="#education">education</a></li>
-      <li class="nav-item"><a class="nav-link" href="#experience">experience</a></li>
-      <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
-    </ul>
-
-    <!-- Links and Info -->
-    <div id="sidebar-links">
-      <div class="sidebar-contact">
-        <a data-toggle="tooltip" data-placement="left" title="Email" href="mailto:naveen.sivasankar1234@gmail.com"><img
-            class="contact-img" src="https://img.icons8.com/ios-glyphs/48/ececec/email.png" /></a>
-      </div>
-
-      <div class="sidebar-contact">
-        <a data-toggle="tooltip" data-placement="left" title="GitHub" href="https://github.com/naveenrs123"><img
-            class="contact-img" src="https://img.icons8.com/ios-glyphs/48/ececec/github.png" /></a>
-      </div>
-
-      <div class="sidebar-contact">
-        <a data-toggle="tooltip" data-placement="left" title="LinkedIn"
-          href="https://www.linkedin.com/in/naveensivasankar/"><img class="contact-img"
-            src="https://img.icons8.com/ios-filled/48/ececec/linkedin.png" /></a>
-      </div>
-
-      <div id="sidebar-info">
-        <a class="info-text" href="https://icons8.com">Icons by
-          <strong>Icons8</strong></a>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <button id="sideButton" onclick="toggleNav()"><img
-        src="https://img.icons8.com/android/24/ececec/menu.png" /></button>
-
-    <!-- About Section -->
-    <div id="about">
-      <div class="about-content">
-        <div class="about-heading">
-          <div class="about-heading-text">
-            <h1>hello.</h1>
-            <h3 class="about-text-large">welcome to my personal website.</h3>
-          </div>
-          <img class="about-image" src="Naveen2.jpeg" />
+      <!-- Links and Info -->
+      <div id="sidebar-links">
+        <div class="sidebar-contact">
+          <a
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Email"
+            href="mailto:naveen.sivasankar1234@gmail.com"
+            ><img
+              class="contact-img"
+              src="https://img.icons8.com/ios-glyphs/48/ececec/email.png"
+          /></a>
         </div>
 
-        <div id="about-accordion">
-          <div class="about-text-large">
-            <div class="about-title">
-              <a href="#about-content" data-toggle="collapse">▾ about.</a>
-            </div>
-            <div id="about-content" class="collapse show" data-parent="#about-accordion">
-              <p>
-                I'm <span>Naveen Sivasankar</span>, a 4th year CS
-                student at UBC. I expect to
-                graduate in <span>May 2022.</span>
-              </p>
-            </div>
-          </div>
+        <div class="sidebar-contact">
+          <a
+            data-toggle="tooltip"
+            data-placement="top"
+            title="GitHub"
+            href="https://github.com/naveenrs123"
+            ><img
+              class="contact-img"
+              src="https://img.icons8.com/ios-glyphs/48/ececec/github.png"
+          /></a>
+        </div>
 
-          <div class="about-text-large">
-            <div class="about-title">
-              <a href="#background-content" data-toggle="collapse">▸ background.</a>
-            </div>
-            <div id="background-content" class="collapse" data-parent="#about-accordion">
-              <p>
-                My work experiences have helped me understand the processes involved with
-                <span>software development</span>.
-              </p>
-              <p>
-                I have a proven
-                track record of working on
-                large-scale web applications with a team of capable
-                software professionals.
-              </p>
-            </div>
-          </div>
+        <div class="sidebar-contact">
+          <a
+            data-toggle="tooltip"
+            data-placement="top"
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/naveensivasankar/"
+            ><img
+              class="contact-img"
+              src="https://img.icons8.com/ios-filled/48/ececec/linkedin.png"
+          /></a>
+        </div>
 
-          <div class="about-text-large">
-            <div class="about-title">
-              <a href="#future-content" data-toggle="collapse">▸ future.</a>
-            </div>
-            <div id="future-content" class="collapse" data-parent="#about-accordion">
-              <p>
-                In the future, I'd love to pursue a <span>Master's Degree</span> in
-                Computer Science, then work on developing tools for the wider development community.
-              </p>
-              <p>
-                With so many
-                possibilities, I am still exploring my options.
-              </p>
+        <!--
+        <div id="sidebar-info">
+          <a class="info-text" href="https://icons8.com"
+            >Icons by <strong>Icons8</strong></a
+          >
+        </div> -->
+      </div>
+
+      <!-- Navigation -->
+      <ul class="nav-container">
+        <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">projects</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <button id="sideButton" onclick="toggleNav()">
+        <img src="https://img.icons8.com/android/16/ececec/menu.png" />
+      </button>
+
+      <!-- About Section -->
+      <div id="about">
+        <div class="about-content">
+          <div class="about-heading">
+            <div class="about-heading-text">
+              <h1>hello.</h1>
+              <h3 class="about-text-large">
+                I'm <span>Naveen</span>, a CS student at UBC graduating in
+                <span>2022</span>.
+              </h3>
             </div>
           </div>
 
-          <div class="about-text-large">
-            <div class="about-title">
-              <a href="#hobbies-content" data-toggle="collapse">▸ hobbies.</a>
-            </div>
-            <div id="hobbies-content" class="collapse" data-parent="#about-accordion">
-              <p>
-                When I'm not involved in academics or work, I love to take photos (particularly of
-                urban scenery), go for walks, and experiment with new recipes in the kitchen.
-              </p>
-              <p>
-                I also enjoy watching TV shows and movies, especially shows that make you think.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="skills" class="section-container">
-      <h2 class="section-title">- Skills -</h2>
-      <div class="skills-content">
-        <div class="container skills-container">
-          <span class="label">Backend</span>
-          <span>Java, C, C++, C#</span>
-        </div>
-
-        <div class="container skills-container">
-          <span class="label">Frontend</span>
-          <span>HTML, CSS, JavaScript, TypeScript, Angular</span>
-        </div>
-
-        <div class="container skills-container">
-          <span class="label">Frameworks</span>
-          <span>React.js, Node.js, Mocha, Chai.js, .NET, REST APIs</span>
-        </div>
-
-        <div class="container skills-container">
-          <span class="label">Dev Tools</span>
-          <span>Git, JIRA, BitBucket, Azure DevOps Server</span>
-        </div>
-
-        <div class="container skills-container">
-          <span class="label">Other Languages</span>
-          <span>Python, Bash, PL/SQL, Selenium WebDriver</span>
-        </div>
-
-        <div class="container skills-container">
-          <span class="label">Environments</span>
-          <span>IntelliJ IDEA, Webstorm, Jupyter Notebooks, Visual Studio Code, Visual
-            Studio</span>
-        </div>
-      </div>
-    </div>
-
-    <div id="education" class="section-container">
-      <h2 class="section-title">- Education -</h2>
-      <div class="education-container">
-        <div id="education-degree">
-          <p class="education-title">Degree Info</p>
-          <p class="info-label"><span>Degree:</span> B.Sc Honours in Computer Science</p>
-          <p class="info-label"><span>Institution:</span> University of British Columbia</p>
-          <p class="info-label"><span>Date:</span> 2017 - Present</p>
-          <p class="info-label"><span>Location:</span> Vancouver, BC</p>
-        </div>
-        <div id="education-courses">
-          <p class="education-title">Relevant Courses</p>
-          <div class="course-list">
-            <p class="info-label"><span>CPSC 210</span> <br>Software Construction</p>
-            <p class="info-label"><span>CPSC 213</span> <br>Intro to Computer Systems</p>
-            <p class="info-label"><span>CPSC 221</span> <br>Basic Algorithms & Data Structures</p>
-            <p class="info-label"><span>CPSC 304</span> <br>Intro to Relational Databases</p>
-            <p class="info-label"><span>CPSC 310</span> <br>Intro to Software Engineering</p>
-            <p class="info-label"><span>CPSC 313</span> <br>Computer Hardware & Operating Systems</p>
-            <p class="info-label"><span>CPSC 320</span> <br>Intermediate Algorithm Design & Analysis</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="experience" class="section-container">
-      <h2 class="section-title">- Experience -</h2>
-      <div class="experience-container">
-        <div class="container-item">
-          <div class="basic-info">
-            <p>Junior Software Engineer Co-op</p>
-            <p class="info-label">Trulioo - Vancouver, BC</p>
-            <p class="info-label">May - Aug 2019</p>
-          </div>
-          <div class="points">
-            <ul>
-              <li>Maintained and improved a full-stack product using <strong>React.js</strong>, and <strong>.NET Framework</strong>.</li>
-              <li>Fixed <strong>30+ front-end bugs</strong> resulting in significantly faster page-load times, reduced instances of visual regression and positive customer feedback.</li>
-              <li>Upgraded front-end framework to <strong>React 16.8</strong> and upgraded projects to <strong>.NET Framework 4.8</strong> in preparation for .NET Core upgrade.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="container-item">
-          <div class="basic-info">
-            <p>Software Engineer in Test Co-op</p>
-            <p class="info-label">Copperleaf - Vancouver, BC</p>
-            <p class="info-label">Sep 2020 - Apr 2021</p>
-          </div>
-          <div class="points">
-            <ul>
-              <li>Developed and tested full-stack software written in <strong>Angular and .NET Framework</strong>, utilizing Oracle SQL, ASP.NET MVC and the NHibernate framework.</li>
-              <li>Wrote multiple thorough test plans with over <strong>30 test cases each</strong> to comprehensively test new features.</li>
-              <li>Fixed <strong>80+ bugs</strong> across the entire application resulting in reduced test failures, significantly faster page-load times, and increasing customer satisfaction.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="container-item">
-          <div class="basic-info">
-            <p>Software Developer Co-op</p>
-            <p class="info-label">Copperleaf - Vancouver, BC</p>
-            <p class="info-label">May - Aug 2021</p>
-          </div>
-          <div class="points">
-            <ul>
-              <li>Removed bloated code and wrote multiple, <strong>500+ line migration scripts</strong> in PL/SQL to migrate existing data and simplify the database schema.</li>
-              <li>Implemented <strong>10+ features</strong> to improve the user experience and facilitate system-wide application architecture changes.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="projects" class="section-container">
-      <h2 class="section-title">- Projects -</h2>
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#wdi">WDI Mini Analysis</a>
-          </div>
-          <div id="wdi" class="collapse show" data-parent="#accordion">
-            <div class="card-body">
-              <div class="card-section">
-                <a href="https://github.com/naveenrs123/world-indicators-project" class="card-link">Link to
-                  Project</a>
-                <p class="info-label"><span>Category: </span>Personal Project</p>
-                <p class="info-label"><span>Duration: </span>Jul 2018</p>
-                <p class="info-label"><span>Technologies Used:</span> Python with Numpy, Pandas, Matplotlib and Folium
+          <div id="about-accordion">
+            <div class="about-text-large">
+              <div class="about-title">
+                <a href="#background-content" data-toggle="collapse"
+                  >▸ background.</a
+                >
+              </div>
+              <div
+                id="background-content"
+                class="collapse"
+                data-parent="#about-accordion"
+              >
+                <p>
+                  I have several years of experience in
+                  <span>full-stack software development</span> for up and coming
+                  enterprise software companies.
+                </p>
+                <p>
+                  These experiences have helped me understand
+                  <span>software development processes</span> and taught me how
+                  to work effectively among a team of capable professionals.
                 </p>
               </div>
-              <ul>
-                <li>Analyzed the World Bank’s World Development Indicators Dataset available on Kaggle.com</li>
-                <li>Compared Urban Population (% of Total) to Arable Land (% of Land Area) to search for a
-                  correlation.
-                </li>
-                <li>Using Folium, visualized both variables on Choropleth maps to investigate spatial trends.</li>
-                <li>Plotted both variables on a scatter plot and performed correlation testing.</li>
-              </ul>
             </div>
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#school">School Planner
-              Applet (CPSC 210)</a>
-          </div>
-          <div id="school" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              <div class="card-section">
-                <a class="card-link" href="https://github.com/naveenrs123/school-planner-project">Link to Project</a>
-                <p class="info-label"><span>Category: </span> Academic Project</p>
-                <p class="info-label"><span>Duration: </span>Sep - Dec 2018</p>
-                <p class="info-label"><span>Technologies Used:</span> Java, Swing, JUnit </p>
+            <div class="about-text-large">
+              <div class="about-title">
+                <a href="#future-content" data-toggle="collapse">▸ future.</a>
               </div>
-              <ul>
-                <li>Created a Java applet to manage tasks, events and classes for UBC Students.</li>
-                <li>Implemented the ability to add, update and remove tasks/events/classes.</li>
-                <li>Allowed for changes to be shown immediately through the use of the Observer design pattern.</li>
-                <li>Stored data in .csv files for easy retrieval.</li>
-                <li>Created a functional GUI using Swing to allow the user to intuitively input details.</li>
-                <li>Tested classes and components with unit tests created using JUnit.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#course">Course/Room Finder (CPSC 310)</a>
-          </div>
-          <div id="course" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              <div class="card-section">
-                <p class="info-label"><span>Category: </span> Academic Project</p>
-                <p class="info-label"><span>Duration: </span>Sep - Dec 2019</p>
-                <p class="info-label"><span>Technologies Used:</span> Typescript, Node.js, Mocha, Chai.js, REST APIs
+              <div
+                id="future-content"
+                class="collapse"
+                data-parent="#about-accordion"
+              >
+                <p>
+                  My ideal career would have a deep emphasis on
+                  <span>full-stack development</span>,
+                  <span>data science</span>, or <span>cloud computing</span>.
+                </p>
+                <p>
+                  With so many possibilities, I am still exploring my options. I
+                  hope to complete a <span>Master's Degree</span> at some point
+                  in the future in a field relevant to my work. I am excited for
+                  the future and the new technologies that it will bring.
                 </p>
               </div>
-              <ul>
-                <li>Implemented a web app from a partial skeleton and a set of requirements to find courses and rooms
-                  from a dataset.</li>
-                <li>Created a parser for both HTML and JSON raw data files that must be loaded into the application.
-                </li>
-                <li>Created a query engine to parse user search input and extract the appropriate data.</li>
-                <li>Extended the query engine to allow for grouping, aggregation, and other complex querying
-                  operations.
-                </li>
-                <li>Extracted form information and sent it to the backend query engine as a JSON string using a REST
-                  endpoint. </li>
-                <li>Created thorough unit tests using Mocha and Chai.js.</li>
-              </ul>
+            </div>
+
+            <div class="about-text-large">
+              <div class="about-title">
+                <a href="#hobbies-content" data-toggle="collapse">▸ hobbies.</a>
+              </div>
+              <div
+                id="hobbies-content"
+                class="collapse"
+                data-parent="#about-accordion"
+              >
+                <p>
+                  When I'm not involved in academics or work, I love to go for
+                  walks, explore restaurants, and experiment with new recipes in
+                  the kitchen.
+                </p>
+                <p>
+                  I also enjoy <span>watching movies</span> and sinking into a
+                  <span>good book</span>!
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#database">Zoo Management System
-              (CPSC 304)</a>
+      <div id="skills" class="section-container">
+        <h2 class="section-title">- Skills -</h2>
+        <div class="skills-content">
+          <div class="container skills-container">
+            <span class="label">Languages </span>
+            <span
+              >Java, C/C++, C# (.NET), HTML, CSS, JavaScript, TypeScript,
+              Python</span
+            >
           </div>
-          <div id="database" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              <div class="card-section">
-                <a class="card-link" href="https://github.com/naveenrs123/ZooManagement304">Link to Project</a>
-                <p class="info-label"><span>Category: </span> Academic Project</p>
-                <p class="info-label"><span>Duration:</span> Jan - Apr 2020</p>
-                <p class="info-label"><span>Technologies Used:</span> Java, JDBC, Oracle SQL Server, Swing</p>
-              </div>
-              <ul>
-                <li>Created a Java Applet for a Zoo Management System with a relational database backend. </li>
-                <li>Enabled insertions, deletions, updates, and searches using the database. </li>
-                <li>Developed a functional GUI using Swing to allow users to effectively interact with the database.
-                </li>
-                <li>Used various buttons and visual elements to give finer search controls to users.</li>
-                <li>Implemented moderately complex SQL queries involving aggregation, division and joins.</li>
-              </ul>
+
+          <div class="container skills-container">
+            <span class="label">Dev Tools</span>
+            <span>Git, JIRA, BitBucket, Azure DevOps, GitHub</span>
+          </div>
+
+          <div class="container skills-container">
+            <span class="label">Tools and Frameworks</span>
+            <span>Bash, PL/SQL, MongoDB, Angular</span>
+          </div>
+
+          <div class="container skills-container">
+            <span class="label">Editors/IDEs</span>
+            <span>IntelliJ, Jupyter Notebook, VS Code, Visual Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="education" class="section-container">
+        <h2 class="section-title">- Education -</h2>
+        <div class="education-container">
+          <div id="education-degree">
+            <p class="education-title">Degree Info</p>
+            <p class="info-label">
+              <span>B.Sc Honours in Computer Science</span><br /><em
+                >University of British Columbia</em
+              >
+            </p>
+            <p class="info-label">
+              <span>Date:</span> 2017 - Present<br /><span>Location:</span>
+              Vancouver, BC
+            </p>
+          </div>
+          <div id="education-courses">
+            <p class="education-title">Relevant Courses</p>
+            <div class="course-list">
+              <p class="info-label">
+                <span>CPSC 304</span> <br />Intro to Relational Databases
+              </p>
+              <p class="info-label">
+                <span>CPSC 313</span> <br />Computer Hardware & Operating
+                Systems
+              </p>
+              <p class="info-label">
+                <span>CPSC 320</span> <br />Intermediate Algorithm Design &
+                Analysis
+              </p>
+              <p class="info-label">
+                <span>CPSC 311</span> <br />Programming Languages
+              </p>
+              <p class="info-label">
+                <span>CPSC 410</span> <br />Advanced Software Engineering
+              </p>
+              <p class="info-label">
+                <span>CPSC 317</span> <br />Internet Computing
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#website">Personal Website</a>
-          </div>
-          <div id="website" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-              <div class="card-section">
-                <a class="card-link" href="https://github.com/naveenrs123/naveenrs123.github.io">Link to Project</a>
-                <p class="info-label"><span>Category: </span>Personal Project</p>
-                <p class="info-label"><span>Duration: </span>Jul 2018</p>
-                <p class="info-label"><span>Technologies Used:</span> HTML, CSS, jQuery, JavaScript</p>
-              </div>
+      <div id="experience" class="section-container">
+        <h2 class="section-title">- Experience -</h2>
+        <div class="experience-container">
+          <div class="container-item">
+            <div class="basic-info">
+              <p>Junior Software Engineer Co-op</p>
+              <p class="info-label">Trulioo - Vancouver, BC</p>
+              <p class="info-label">May - Aug 2019</p>
+            </div>
+            <div class="points">
               <ul>
-                <li>Created a lightweight, responsive website.</li>
-                <li>Used CSS media queries to responsively adjust sizes and layouts based on viewport size.</li>
-                <li>Flexibly positioned elements using CSS Flexbox.</li>
-                <li>Implemented smooth scrolling and dropdown animation using jQuery snippets. </li>
+                <li>
+                  Maintained and improved a full-stack product using
+                  <strong>React.js</strong>, and
+                  <strong>.NET Framework</strong>.
+                </li>
+                <li>
+                  Fixed <strong>30+ front-end bugs</strong> resulting in
+                  significantly faster page-load times, reduced instances of
+                  visual regression and positive customer feedback.
+                </li>
+                <li>
+                  Upgraded front-end framework to
+                  <strong>React 16.8</strong> and upgraded projects to
+                  <strong>.NET Framework 4.8</strong> in preparation for .NET
+                  Core upgrade.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container-item">
+            <div class="basic-info">
+              <p>Software Engineer in Test Co-op</p>
+              <p class="info-label">Copperleaf - Vancouver, BC</p>
+              <p class="info-label">Sep 2020 - Apr 2021</p>
+            </div>
+            <div class="points">
+              <ul>
+                <li>
+                  Developed and tested full-stack software written in
+                  <strong>Angular and .NET Framework</strong>, utilizing Oracle
+                  SQL, ASP.NET MVC and the NHibernate framework.
+                </li>
+                <li>
+                  Wrote multiple thorough test plans with over
+                  <strong>30 test cases each</strong> to comprehensively test
+                  new features.
+                </li>
+                <li>
+                  Fixed <strong>80+ bugs</strong> across the entire application
+                  resulting in reduced test failures, significantly faster
+                  page-load times, and increasing customer satisfaction.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container-item">
+            <div class="basic-info">
+              <p>Software Developer Co-op</p>
+              <p class="info-label">Copperleaf - Vancouver, BC</p>
+              <p class="info-label">May - Aug 2021</p>
+            </div>
+            <div class="points">
+              <ul>
+                <li>
+                  Removed bloated code and wrote multiple,
+                  <strong>500+ line migration scripts</strong> in PL/SQL to
+                  migrate existing data and simplify the database schema.
+                </li>
+                <li>
+                  Implemented <strong>10+ features</strong> to improve the user
+                  experience and facilitate system-wide application architecture
+                  changes.
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <footer>
-      <p id="copyright">Copyright &copy; 2021 Naveen Sivasankar.</p>
-    </footer>
-  </main>
+      <div id="projects" class="section-container">
+        <h2 class="section-title">- Projects -</h2>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#wdi"
+                >WDI Mini Analysis</a
+              >
+            </div>
+            <div id="wdi" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card-section">
+                  <a
+                    href="https://github.com/naveenrs123/world-indicators-project"
+                    class="card-link"
+                    >Link to Project</a
+                  >
+                  <p class="info-label">
+                    <span>Category: </span>Personal Project
+                  </p>
+                  <p class="info-label"><span>Duration: </span>Jul 2018</p>
+                  <p class="info-label">
+                    <span>Technologies Used:</span> Python with Numpy, Pandas,
+                    Matplotlib and Folium
+                  </p>
+                </div>
+                <ul>
+                  <li>
+                    Analyzed the World Bank’s World Development Indicators
+                    Dataset available on Kaggle.com
+                  </li>
+                  <li>
+                    Compared Urban Population (% of Total) to Arable Land (% of
+                    Land Area) to search for a correlation.
+                  </li>
+                  <li>
+                    Using Folium, visualized both variables on Choropleth maps
+                    to investigate spatial trends.
+                  </li>
+                  <li>
+                    Plotted both variables on a scatter plot and performed
+                    correlation testing.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#school"
+                >School Planner Applet (CPSC 210)</a
+              >
+            </div>
+            <div id="school" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card-section">
+                  <a
+                    class="card-link"
+                    href="https://github.com/naveenrs123/school-planner-project"
+                    >Link to Project</a
+                  >
+                  <p class="info-label">
+                    <span>Category: </span> Academic Project
+                  </p>
+                  <p class="info-label">
+                    <span>Duration: </span>Sep - Dec 2018
+                  </p>
+                  <p class="info-label">
+                    <span>Technologies Used:</span> Java, Swing, JUnit
+                  </p>
+                </div>
+                <ul>
+                  <li>
+                    Created a Java applet to manage tasks, events and classes
+                    for UBC Students.
+                  </li>
+                  <li>
+                    Implemented the ability to add, update and remove
+                    tasks/events/classes.
+                  </li>
+                  <li>
+                    Allowed for changes to be shown immediately through the use
+                    of the Observer design pattern.
+                  </li>
+                  <li>Stored data in .csv files for easy retrieval.</li>
+                  <li>
+                    Created a functional GUI using Swing to allow the user to
+                    intuitively input details.
+                  </li>
+                  <li>
+                    Tested classes and components with unit tests created using
+                    JUnit.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#course"
+                >Course/Room Finder (CPSC 310)</a
+              >
+            </div>
+            <div id="course" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card-section">
+                  <p class="info-label">
+                    <span>Category: </span> Academic Project
+                  </p>
+                  <p class="info-label">
+                    <span>Duration: </span>Sep - Dec 2019
+                  </p>
+                  <p class="info-label">
+                    <span>Technologies Used:</span> Typescript, Node.js, Mocha,
+                    Chai.js, REST APIs
+                  </p>
+                </div>
+                <ul>
+                  <li>
+                    Implemented a web app from a partial skeleton and a set of
+                    requirements to find courses and rooms from a dataset.
+                  </li>
+                  <li>
+                    Created a parser for both HTML and JSON raw data files that
+                    must be loaded into the application.
+                  </li>
+                  <li>
+                    Created a query engine to parse user search input and
+                    extract the appropriate data.
+                  </li>
+                  <li>
+                    Extended the query engine to allow for grouping,
+                    aggregation, and other complex querying operations.
+                  </li>
+                  <li>
+                    Extracted form information and sent it to the backend query
+                    engine as a JSON string using a REST endpoint.
+                  </li>
+                  <li>Created thorough unit tests using Mocha and Chai.js.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#database"
+                >Zoo Management System (CPSC 304)</a
+              >
+            </div>
+            <div id="database" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card-section">
+                  <a
+                    class="card-link"
+                    href="https://github.com/naveenrs123/ZooManagement304"
+                    >Link to Project</a
+                  >
+                  <p class="info-label">
+                    <span>Category: </span> Academic Project
+                  </p>
+                  <p class="info-label">
+                    <span>Duration:</span> Jan - Apr 2020
+                  </p>
+                  <p class="info-label">
+                    <span>Technologies Used:</span> Java, JDBC, Oracle SQL
+                    Server, Swing
+                  </p>
+                </div>
+                <ul>
+                  <li>
+                    Created a Java Applet for a Zoo Management System with a
+                    relational database backend.
+                  </li>
+                  <li>
+                    Enabled insertions, deletions, updates, and searches using
+                    the database.
+                  </li>
+                  <li>
+                    Developed a functional GUI using Swing to allow users to
+                    effectively interact with the database.
+                  </li>
+                  <li>
+                    Used various buttons and visual elements to give finer
+                    search controls to users.
+                  </li>
+                  <li>
+                    Implemented moderately complex SQL queries involving
+                    aggregation, division and joins.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#website"
+                >Personal Website</a
+              >
+            </div>
+            <div id="website" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card-section">
+                  <a
+                    class="card-link"
+                    href="https://github.com/naveenrs123/naveenrs123.github.io"
+                    >Link to Project</a
+                  >
+                  <p class="info-label">
+                    <span>Category: </span>Personal Project
+                  </p>
+                  <p class="info-label"><span>Duration: </span>Jul 2018</p>
+                  <p class="info-label">
+                    <span>Technologies Used:</span> HTML, CSS, jQuery,
+                    JavaScript
+                  </p>
+                </div>
+                <ul>
+                  <li>Created a lightweight, responsive website.</li>
+                  <li>
+                    Used CSS media queries to responsively adjust sizes and
+                    layouts based on viewport size.
+                  </li>
+                  <li>Flexibly positioned elements using CSS Flexbox.</li>
+                  <li>
+                    Implemented smooth scrolling and dropdown animation using
+                    jQuery snippets.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p id="copyright">Copyright &copy; 2021 Naveen Sivasankar.</p>
+      </footer>
+    </main>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
