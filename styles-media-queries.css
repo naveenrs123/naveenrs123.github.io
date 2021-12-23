@@ -449,7 +449,7 @@
     
     /* #region SKILLS */
     .skills-container {
-        width: 100%;
+        flex-basis: 100%;
         padding: 5px 10px;
         font-size: 0.95rem;
     }
