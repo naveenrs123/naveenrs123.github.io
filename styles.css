@@ -13,7 +13,7 @@ body {
     width: auto;
     max-width: 2300px;
     margin: 0 auto;
-    background-color: #242F40;
+    background-color: #000000;
     /* background-color: #222831; */
     position: relative;
     font-weight: 300;
@@ -30,7 +30,7 @@ main {
     margin-bottom: 15px;
     font-size: 3rem;
     font-weight: 700;
-    color: #f2a365;
+    color: #CF5C36;
     width: fit-content;
 }
 
@@ -56,7 +56,6 @@ main {
     padding: 15px 0px;
     font-weight: 600;
     font-size: 1rem;
-    background-color: #222222;
     color: #ececec;
     margin-bottom: 0;
     font-style: italic;
@@ -85,7 +84,7 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #363636;
+    background-color: #262626;
     /* background-color: #30475e; */
     text-align: center;
     transition: width 0.3s;
@@ -94,7 +93,7 @@ nav {
 
 .nav-container {
     width: 100%;
-    background-color:#e5e5e5;
+    /* background-color: #343434; */
     /* background-color:#ececec; */
     margin: 0;
     padding: 0;
@@ -102,20 +101,22 @@ nav {
 
 .nav-item {
     list-style-type: none;
+    /* margin: 0 5px; */
 }
 
 .nav-item a {
     text-decoration: none;
     text-align: center;
-    color: #222222;
+    color: #FFFFFF;
     transition: 0.3s;
-    padding: 0.5rem 0.8rem;
+    /* padding: 0.5rem 0.8rem; */
     font-size: 1.35rem;
     font-weight: 400;
+    background-color: #000000;
 }
 
 .nav-item a:hover, .nav-link.active {
-    background-color: #222222;
+    background-color: #cf5c36;
     color:#ececec;
 }
 
@@ -128,7 +129,7 @@ nav {
 }
 
 #sidebar-links {
-    padding: 30px 0px 10px;
+    padding: 40px 0px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -138,7 +139,7 @@ nav {
 }
 
 #sidebar-info .yellow {
-    color: #f2a365;
+    color: #CF5C36;
 }
 
 
@@ -173,7 +174,7 @@ nav {
 /* #region ABOUT */
 
 #about {
-    padding: 20px 10px 0px 40px;
+    padding: 60px 10px 0px 40px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -207,7 +208,7 @@ nav {
 
 .about-content h1 {
     font-size: 6.0rem;
-    color: #f2a365;
+    color: #CF5C36;
     font-weight: 700;
 }
 
@@ -216,12 +217,10 @@ nav {
     font-weight: 500;
 }
 
-#about-accordion {
-    margin-right: 40px;
-}
+#about-accordion {margin-left: -8px;}
 
 .about-title a {
-    color:#f2a365;
+    color:#CF5C36;
     font-size: 2.1rem;
     text-decoration: none;
 }
@@ -231,6 +230,10 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+.about-title {
+    font-weight: 500;
+}
+
 .about-text-large p {
     font-size: 1.7rem;
     margin: 10px 10px 0px;
@@ -238,7 +241,7 @@ nav {
 
 .about-text-large span {
     font-weight: 600;
-    color: #f2a365;
+    color: #EFC88d;
 }
 
 /* #endregion ABOUT */
@@ -246,7 +249,7 @@ nav {
 /* #region SKILLS */
 
 .skills-content {
-    background-color: #30475e;
+    background-color: #282828;
     padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -262,6 +265,7 @@ nav {
 }
 
 .label {
+    color: #efc88d;
     font-weight: 600;
     font-size: 1.8rem;
     padding: 7px 0px;
@@ -272,7 +276,7 @@ nav {
 /* #region EDUCATION */
 
 .education-container {
-    background-color: #30475e;
+    background-color: #282828;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -287,9 +291,11 @@ nav {
 
 .education-container span {
     font-weight: 600;
+    color: #cf5c36;
 }
 
 .education-title {
+    color: #efc88d;
     width: 100%;
     font-weight: 600;
     font-size: 1.8rem;
@@ -317,7 +323,7 @@ nav {
 }
 
 .course-list span {
-    color: #f2a365;
+    color: #CF5C36;
 }
 
 /* #endregion EDUCATION */
@@ -325,7 +331,7 @@ nav {
 /* #region EXPERIENCE */
 
 .experience-container {
-    background-color: #30475e;
+    background-color: #282828;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -341,13 +347,14 @@ nav {
     font-weight: 600;
     font-size: 1.8rem;
     margin-bottom: 6px;
+    color: #EFC88b;
 }
 
 .container-item .info-label {
     font-weight: 500;
     font-size: 1.4rem;
     margin-bottom: 6px;
-    color: #f2a365;
+    color: #CF5C36;
     font-style: italic;
 }
 
@@ -377,24 +384,25 @@ nav {
 }
 
 #projects .card-header .card-link {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #ececec;
+    color: #efc88b;
     width: 100%;
     height: 100%;
     display: block;
-    padding: 10px 20px;
+    padding: 5px 20px;
+    text-align: center;
 }
 
 #projects .card {
     font-size: 1.3rem;
     border-radius: 0px;
     border: none;
-    background-color: #222831;
+    background-color: #282828;
 }
 
 #projects .card-header {
-    background-color: #222831;
+    background-color: #000000;
     border-bottom: 1px solid #ececec;
     border-radius: 0px;
     padding: 10px 0px;
@@ -407,7 +415,7 @@ nav {
 #projects .card-body {
     display: flex;
     align-items: stretch;
-    background-color: #30475e;
+    background-color: #282828;
     color: #ececec;
 }
 
@@ -416,7 +424,7 @@ nav {
     width: fit-content;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #f2a365;
+    color: #CF5C36;
 }
 
 #projects .card-body .card-link:link {
